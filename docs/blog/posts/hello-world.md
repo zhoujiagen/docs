@@ -1,21 +1,17 @@
 ---
-draft: true 
-date: 2023-01-31 
-slug: hello-world
+draft: false 
+date: 2024-01-01 
+slug: hello-world-slug
 categories:
-  - Hello
-  - World
+  - HelloWorldCategory
 tags:
-  - template
-  - how-to
+  - HelloWorldTag
 ---
 
 
-# Hello World Blogpost
+# Hello World
 
-Blog excerpt here
+A `HelloWorld` doc of Material for MkDocs built-in blog plugin.
 
 <!-- more -->
-
-Rest of blog here
-...
+The content goes here.

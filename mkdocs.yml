@@ -1,13 +1,15 @@
-site_name: obsidian-mkdocs template
+site_name: Documentation
 
 theme:
     name: 'material'
+    features:
+      - navigation.tabs
     palette:
 
     # Light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: pink
+      primary: indigo
       accent: indigo
       toggle:
         icon: material/toggle-switch-off-outline
@@ -16,8 +18,8 @@ theme:
     # Dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: pink
-      accent: blue
+      primary: indigo
+      accent: indigo
       toggle:
         icon: material/toggle-switch
         name: Switch to light mode
@@ -47,11 +49,16 @@ markdown_extensions:
 
   - toc:
       permalink: true
+      baselevel: 0
+      toc_depth: "0-3"
 
 plugins:
   - search
   - roamlinks
-  - blog
+  - tags
+  - blog:
+      blog_toc: true
+      archive: false
   - rss:
       match_path: blog/posts/.* 
       date_from_meta:
@@ -60,6 +67,8 @@ plugins:
         - categories
         - tags
 
+extra_css:
+  - stylesheets/extra.css
 extra_javascript:
   - javascripts/mathjax.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
