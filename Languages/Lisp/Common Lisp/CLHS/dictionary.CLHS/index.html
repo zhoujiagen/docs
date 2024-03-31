@@ -1,0 +1,2386 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../../Common%20Lisp%20HyperSpec/">
+      
+      
+        <link rel="next" href="../figures.CLHS/">
+      
+      
+        <link rel="alternate" type="application/rss+xml" title="RSS feed" href="../../../../../feed_rss_created.xml">
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of updated content" href="../../../../../feed_rss_updated.xml">
+      
+      <link rel="icon" href="../../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.16">
+    
+    
+      
+        <title>dictionary.CLHS - Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.bcfcd587.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../../.." title="Documentation" class="md-header__button md-logo" aria-label="Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              dictionary.CLHS
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../Common%20Lisp%20HyperSpec/" class="md-tabs__link">
+          
+  
+  Languages
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../../blog/" class="md-tabs__link">
+          
+  
+  Blog
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../../.." title="Documentation" class="md-nav__button md-logo" aria-label="Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Languages
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Languages
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Lisp
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            Lisp
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_1_1" id="__nav_2_1_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Common Lisp
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_1_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_1_1">
+            <span class="md-nav__icon md-icon"></span>
+            Common Lisp
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Common%20Lisp%20HyperSpec/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Common Lisp HyperSpec
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1_1_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_1_1_2" id="__nav_2_1_1_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    CLHS
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_1_1_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_1_1_2">
+            <span class="md-nav__icon md-icon"></span>
+            CLHS
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    dictionary.CLHS
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    dictionary.CLHS
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1 求值和编译的字典
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2 类型和类的字典
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      3 数据和控制流的字典
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      4 迭代的字典
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      5 对象的字典
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      6 结构的字典
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      7 状况的字典
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    <span class="md-ellipsis">
+      8 符号的字典
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9" class="md-nav__link">
+    <span class="md-ellipsis">
+      9 包的字典
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10" class="md-nav__link">
+    <span class="md-ellipsis">
+      10 数值的字典
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11" class="md-nav__link">
+    <span class="md-ellipsis">
+      11 字符的字典
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-cons" class="md-nav__link">
+    <span class="md-ellipsis">
+      12 Cons的字典
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13" class="md-nav__link">
+    <span class="md-ellipsis">
+      13 数组的字典
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14" class="md-nav__link">
+    <span class="md-ellipsis">
+      14 字符串的字典
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15" class="md-nav__link">
+    <span class="md-ellipsis">
+      15 序列的字典
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#16" class="md-nav__link">
+    <span class="md-ellipsis">
+      16 哈希表的字典
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#17" class="md-nav__link">
+    <span class="md-ellipsis">
+      17 文件名的字典
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#18" class="md-nav__link">
+    <span class="md-ellipsis">
+      18 文件的字典
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#19" class="md-nav__link">
+    <span class="md-ellipsis">
+      19 流的字典
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20" class="md-nav__link">
+    <span class="md-ellipsis">
+      20 打印器的字典
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#21" class="md-nav__link">
+    <span class="md-ellipsis">
+      21 读取器的字典
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#22" class="md-nav__link">
+    <span class="md-ellipsis">
+      22 系统构造的字典
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#23" class="md-nav__link">
+    <span class="md-ellipsis">
+      23 环境的字典
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../figures.CLHS/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    figures.CLHS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../glossary.CLHS/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    glossary.CLHS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../symbol.CLHS/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    symbol.CLHS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Blog
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Blog
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../blog/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Index
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Categories
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            Categories
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../blog/category/helloworldcategory/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Helloworldcategory
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1 求值和编译的字典
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2 类型和类的字典
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      3 数据和控制流的字典
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      4 迭代的字典
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      5 对象的字典
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      6 结构的字典
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      7 状况的字典
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    <span class="md-ellipsis">
+      8 符号的字典
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9" class="md-nav__link">
+    <span class="md-ellipsis">
+      9 包的字典
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10" class="md-nav__link">
+    <span class="md-ellipsis">
+      10 数值的字典
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11" class="md-nav__link">
+    <span class="md-ellipsis">
+      11 字符的字典
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-cons" class="md-nav__link">
+    <span class="md-ellipsis">
+      12 Cons的字典
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13" class="md-nav__link">
+    <span class="md-ellipsis">
+      13 数组的字典
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14" class="md-nav__link">
+    <span class="md-ellipsis">
+      14 字符串的字典
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15" class="md-nav__link">
+    <span class="md-ellipsis">
+      15 序列的字典
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#16" class="md-nav__link">
+    <span class="md-ellipsis">
+      16 哈希表的字典
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#17" class="md-nav__link">
+    <span class="md-ellipsis">
+      17 文件名的字典
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#18" class="md-nav__link">
+    <span class="md-ellipsis">
+      18 文件的字典
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#19" class="md-nav__link">
+    <span class="md-ellipsis">
+      19 流的字典
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20" class="md-nav__link">
+    <span class="md-ellipsis">
+      20 打印器的字典
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#21" class="md-nav__link">
+    <span class="md-ellipsis">
+      21 读取器的字典
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#22" class="md-nav__link">
+    <span class="md-ellipsis">
+      22 系统构造的字典
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#23" class="md-nav__link">
+    <span class="md-ellipsis">
+      23 环境的字典
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+  
+<nav class="md-tags" >
+  
+    
+    
+    
+      <span class="md-tag">Lisp</span>
+    
+  
+    
+    
+    
+      <span class="md-tag">Common-Lisp</span>
+    
+  
+    
+    
+    
+      <span class="md-tag">CLHS</span>
+    
+  
+</nav>
+
+
+
+  <h1>dictionary.CLHS</h1>
+
+<h0 id="1">1 求值和编译的字典<a class="headerlink" href="#1" title="Permanent link">&para;</a></h0>
+<ul>
+<li>symbol <code>lambda</code></li>
+<li>macro <code>lambda</code></li>
+<li>function <code>compile</code></li>
+<li>function <code>eval</code></li>
+<li>special operator <code>eval-when</code></li>
+<li>special operator <code>load-time-value</code></li>
+<li>special operator <code>quote</code></li>
+<li>accessor <code>compiler-macro-function</code></li>
+<li>macro <code>define-compiler-macro</code></li>
+<li>macro <code>defmacro</code></li>
+<li>accessor <code>macro-function</code></li>
+<li>function <code>macroexpand</code></li>
+<li>macro <code>define-symbol-macro</code></li>
+<li>special operator <code>symbol-macrolet</code></li>
+<li>variable <code>*macroexpand-hook*</code></li>
+<li>function <code>proclaim</code></li>
+<li>macro <code>declaim</code></li>
+<li>symbol <code>declare</code></li>
+<li>declaration <code>ignore</code></li>
+<li>declaration <code>dynamic-extent</code></li>
+<li>declaration <code>type</code></li>
+<li>declaration <code>inline</code></li>
+<li>declaration <code>ftype</code></li>
+<li>declaration <code>declaration</code></li>
+<li>declaration <code>optimize</code></li>
+<li>declaration <code>special</code></li>
+<li>special operator <code>locally</code></li>
+<li>special operator <code>the</code></li>
+<li>function <code>special-operator-p</code></li>
+<li>function <code>constantp</code></li>
+</ul>
+<h0 id="2">2 类型和类的字典<a class="headerlink" href="#2" title="Permanent link">&para;</a></h0>
+<ul>
+<li>type <code>nil</code></li>
+<li>type <code>boolean</code></li>
+<li>system class <code>function</code></li>
+<li>type <code>compiled-function</code></li>
+<li>system class <code>generic-function</code></li>
+<li>system class <code>standard-generic-function</code></li>
+<li>system class <code>class</code></li>
+<li>system class <code>built-in-class</code></li>
+<li>system class <code>structure-class</code></li>
+<li>system class <code>standard-class</code></li>
+<li>system class <code>method</code></li>
+<li>system class <code>standard-method</code></li>
+<li>class <code>structure-object</code></li>
+<li>class <code>standard-object</code></li>
+<li>system class <code>method-combination</code></li>
+<li>system class <code>t</code></li>
+<li>type specifier <code>satisfies</code></li>
+<li>type specifier <code>member</code></li>
+<li>type specifier <code>not</code></li>
+<li>type specifier <code>and</code></li>
+<li>type specifier <code>or</code></li>
+<li>type specifier <code>values</code></li>
+<li>type specifier <code>eql</code></li>
+<li>function <code>coerce</code></li>
+<li>macro <code>deftype</code></li>
+<li>function <code>subtypep</code></li>
+<li>function <code>type-of</code></li>
+<li>function <code>typep</code></li>
+<li>condition type <code>type-error</code></li>
+<li>function <code>type-error-datum</code></li>
+<li>condition type <code>simple-type-error</code></li>
+</ul>
+<h0 id="3">3 数据和控制流的字典<a class="headerlink" href="#3" title="Permanent link">&para;</a></h0>
+<ul>
+<li>function <code>apply</code></li>
+<li>macro <code>defun</code></li>
+<li>accessor <code>fdefinition</code></li>
+<li>function <code>fboundp</code></li>
+<li>function <code>fmakunbound</code></li>
+<li>special operator <code>flet</code></li>
+<li>function <code>funcall</code></li>
+<li>special operator <code>function</code></li>
+<li>function <code>function-lambda-expression</code></li>
+<li>function <code>functionp</code></li>
+<li>function <code>compiled-function-p</code></li>
+<li>constant variable <code>call-arguments-limit</code></li>
+<li>constant variable <code>lambda-list-keywords</code></li>
+<li>constant variable <code>lambda-parameters-limit</code></li>
+<li>macro <code>defconstant</code></li>
+<li>macro <code>defparameter</code></li>
+<li>macro <code>defvar</code></li>
+<li>macro <code>destructuring-bind</code></li>
+<li>special operator <code>let</code></li>
+<li>special operator <code>progv</code></li>
+<li>specialform <code>setq</code></li>
+<li>macro <code>psetq</code></li>
+<li>special operator <code>block</code></li>
+<li>special operator <code>catch</code></li>
+<li>special operator <code>go</code></li>
+<li>special operator <code>return-from</code></li>
+<li>macro <code>return</code></li>
+<li>special operator <code>tagbody</code></li>
+<li>special operator <code>throw</code></li>
+<li>special operator <code>unwind-protect</code></li>
+<li>constant variable <code>nil</code></li>
+<li>function <code>not</code></li>
+<li>constant variable <code>t</code></li>
+<li>function <code>eq</code></li>
+<li>function <code>eql</code></li>
+<li>function <code>equal</code></li>
+<li>function <code>equalp</code></li>
+<li>function <code>identity</code></li>
+<li>function <code>complement</code></li>
+<li>function <code>constantly</code></li>
+<li>function <code>every</code></li>
+<li>macro <code>and</code></li>
+<li>macro <code>cond</code></li>
+<li>special operator <code>if</code></li>
+<li>macro <code>or</code></li>
+<li>macro <code>when</code></li>
+<li>macro <code>unless</code></li>
+<li>macro <code>case</code></li>
+<li>macro <code>typecase</code></li>
+<li>macro <code>multiple-value-bind</code></li>
+<li>special operator <code>multiple-value-call</code></li>
+<li>macro <code>multiple-value-list</code></li>
+<li>special operator <code>multiple-value-prog1</code></li>
+<li>macro <code>multiple-value-setq</code></li>
+<li>accessor <code>values</code></li>
+<li>function <code>values-list</code></li>
+<li>constant variable <code>multiple-values-limit</code></li>
+<li>macro <code>nth-value</code></li>
+<li>macro <code>prog</code></li>
+<li>macro <code>prog1</code></li>
+<li>special operator <code>progn</code></li>
+<li>macro <code>define-modify-macro</code></li>
+<li>macro <code>defsetf</code></li>
+<li>macro <code>define-setf-expander</code></li>
+<li>function <code>get-setf-expansion</code></li>
+<li>macro <code>setf</code></li>
+<li>macro <code>shiftf</code></li>
+<li>macro <code>rotatef</code></li>
+<li>condition type <code>control-error</code></li>
+<li>condition type <code>program-error</code></li>
+<li>condition type <code>undefined-function</code></li>
+</ul>
+<h0 id="4">4 迭代的字典<a class="headerlink" href="#4" title="Permanent link">&para;</a></h0>
+<ul>
+<li>macro <code>do, do*</code></li>
+<li>macro <code>dotimes</code></li>
+<li>macro <code>dolist</code></li>
+<li>macro <code>loop</code></li>
+<li>local macro <code>loop-finish</code></li>
+</ul>
+<h0 id="5">5 对象的字典<a class="headerlink" href="#5" title="Permanent link">&para;</a></h0>
+<ul>
+<li>standard generic function <code>function-keywords</code></li>
+<li>function <code>ensure-generic-function</code></li>
+<li>standard generic function <code>allocate-instance</code></li>
+<li>standard generic function <code>reinitialize-instance</code></li>
+<li>standard generic function <code>shared-initialize</code></li>
+<li>standard generic function <code>update-instance-for-different-class</code></li>
+<li>standard generic function <code>update-instance-for-redefined-class</code></li>
+<li>standard generic function <code>change-class</code></li>
+<li>function <code>slot-boundp</code></li>
+<li>function <code>slot-exists-p</code></li>
+<li>function <code>slot-makunbound</code></li>
+<li>standard generic function <code>slot-missing</code></li>
+<li>standard generic function <code>slot-unbound</code></li>
+<li>function <code>slot-value</code></li>
+<li>standard generic function <code>method-qualifiers</code></li>
+<li>standard generic function <code>no-applicable-method</code></li>
+<li>standard generic function <code>no-next-method</code></li>
+<li>standard generic function <code>remove-method</code></li>
+<li>standard generic function <code>make-instance</code></li>
+<li>standard generic function <code>make-instances-obsolete</code></li>
+<li>standard generic function <code>make-load-form</code></li>
+<li>function <code>make-load-form-saving-slots</code></li>
+<li>macro <code>with-accessors</code></li>
+<li>macro <code>with-slots</code></li>
+<li>macro <code>defclass</code></li>
+<li>macro <code>defgeneric</code></li>
+<li>macro <code>defmethod</code></li>
+<li>accessor <code>find-class</code></li>
+<li>local function <code>next-method-p</code></li>
+<li>local macro <code>call-method, make-method</code></li>
+<li>local function <code>call-next-method</code></li>
+<li>standard generic function <code>compute-applicable-methods</code></li>
+<li>macro <code>define-method-combination</code></li>
+<li>standard generic function <code>find-method</code></li>
+<li>standard generic function <code>add-method</code></li>
+<li>standard generic function <code>initialize-instance</code></li>
+<li>standard generic function <code>class-name</code></li>
+<li>standard generic function `</li>
+<li>function <code>class-of</code></li>
+<li>condition <code>type unbound-slot</code></li>
+<li>function <code>unbound-slot-instance</code></li>
+</ul>
+<h0 id="6">6 结构的字典<a class="headerlink" href="#6" title="Permanent link">&para;</a></h0>
+<ul>
+<li>macro <code>defstruct</code></li>
+<li>function <code>copy-structure</code></li>
+</ul>
+<h0 id="7">7 状况的字典<a class="headerlink" href="#7" title="Permanent link">&para;</a></h0>
+<ul>
+<li>condition type <code>condition</code></li>
+<li>condition type <code>warning</code></li>
+<li>condition type <code>style-warning</code></li>
+<li>condition type <code>serious-condition</code></li>
+<li>condition type <code>error</code></li>
+<li>condition type <code>cell-error</code></li>
+<li>function <code>cell-error-name</code></li>
+<li>condition type <code>parse-error</code></li>
+<li>condition type <code>storage-condition</code></li>
+<li>macro <code>assert</code></li>
+<li>function <code>error</code></li>
+<li>function <code>cerror</code></li>
+<li>macro <code>check-type</code></li>
+<li>condition type <code>simple-error</code></li>
+<li>function <code>invalid-method-error</code></li>
+<li>function <code>method-combination-error</code></li>
+<li>function <code>signal</code></li>
+<li>condition type <code>simple-condition</code></li>
+<li>function <code>simple-condition-format-control</code></li>
+<li>function <code>warn</code></li>
+<li>condition type <code>simple-warning</code></li>
+<li>function <code>invoke-debugger</code></li>
+<li>function <code>break</code></li>
+<li>variable <code>*debugger-hook*</code></li>
+<li>variable <code>*break-on-signals*</code></li>
+<li>macro <code>handler-bind</code></li>
+<li>macro <code>handler-case</code></li>
+<li>macro <code>ignore-errors</code></li>
+<li>macro <code>define-condition</code></li>
+<li>function <code>make-condition</code></li>
+<li>system class <code>restart</code></li>
+<li>function <code>compute-restarts</code></li>
+<li>function <code>find-restart</code></li>
+<li>function <code>invoke-restart</code></li>
+<li>function <code>invoke-restart-interactively</code></li>
+<li>macro <code>restart-bind</code></li>
+<li>macro <code>restart-case</code></li>
+<li>function <code>restart-name</code></li>
+<li>macro <code>with-condition-restarts</code></li>
+<li>macro <code>with-simple-restart</code></li>
+<li>restart <code>abort</code></li>
+<li>restart <code>continue</code></li>
+<li>restart <code>muffle-warning</code></li>
+<li>restart <code>store-value</code></li>
+<li>restart <code>use-value</code></li>
+<li>function <code>abort</code></li>
+</ul>
+<h0 id="8">8 符号的字典<a class="headerlink" href="#8" title="Permanent link">&para;</a></h0>
+<ul>
+<li>system class <code>symbol</code></li>
+<li>type <code>keyword</code></li>
+<li>function <code>symbolp</code></li>
+<li>function <code>keywordp</code></li>
+<li>function <code>make-symbol</code></li>
+<li>function <code>copy-symbol</code></li>
+<li>function <code>gensym</code></li>
+<li>variable <code>*gensym-counter*</code></li>
+<li>function <code>gentemp</code></li>
+<li>accessor <code>symbol-function</code></li>
+<li>function <code>symbol-name</code></li>
+<li>function <code>symbol-package</code></li>
+<li>accessor <code>symbol-plist</code></li>
+<li>accessor <code>symbol-value</code></li>
+<li>accessor <code>get</code></li>
+<li>function <code>remprop</code></li>
+<li>function <code>boundp</code></li>
+<li>function <code>makunbound</code></li>
+<li>function <code>set</code></li>
+<li>condition type <code>unbound-variable</code></li>
+</ul>
+<h0 id="9">9 包的字典<a class="headerlink" href="#9" title="Permanent link">&para;</a></h0>
+<ul>
+<li>system class <code>package</code></li>
+<li>function <code>export</code></li>
+<li>function <code>find-symbol</code></li>
+<li>function <code>find-package</code></li>
+<li>function <code>find-all-symbols</code></li>
+<li>function <code>import</code></li>
+<li>function <code>list-all-packages</code></li>
+<li>function <code>rename-package</code></li>
+<li>function <code>shadow</code></li>
+<li>function <code>shadowing-import</code></li>
+<li>function <code>delete-package</code></li>
+<li>function <code>make-package</code></li>
+<li>macro <code>with-package-iterator</code></li>
+<li>function <code>unexport</code></li>
+<li>function <code>unintern</code></li>
+<li>macro <code>in-package</code></li>
+<li>function <code>unuse-package</code></li>
+<li>function <code>use-package</code></li>
+<li>macro <code>defpackage</code></li>
+<li>macro <code>do-symbols</code></li>
+<li>function <code>intern</code></li>
+<li>function <code>package-name</code></li>
+<li>function <code>package-nicknames</code></li>
+<li>function <code>package-shadowing-symbols</code></li>
+<li>function <code>package-use-list</code></li>
+<li>function <code>package-used-by-list</code></li>
+<li>function <code>packagep</code></li>
+<li>variable <code>*package*</code></li>
+<li>condition type <code>package-error</code></li>
+<li>function <code>package-error-package</code></li>
+</ul>
+<h0 id="10">10 数值的字典<a class="headerlink" href="#10" title="Permanent link">&para;</a></h0>
+<ul>
+<li>system class <code>number</code></li>
+<li>system class <code>complex</code></li>
+<li>system class <code>real</code></li>
+<li>system class <code>float</code></li>
+<li>type <code>short-float</code></li>
+<li>type <code>single-float</code></li>
+<li>type <code>double-float</code></li>
+<li>type <code>long-float</code></li>
+<li>system class <code>rational</code></li>
+<li>system class <code>ratio</code></li>
+<li>system class <code>integer</code></li>
+<li>type <code>signed-byte</code></li>
+<li>type <code>unsigned-byte</code></li>
+<li>type <code>specifier mod</code></li>
+<li>type <code>bit</code></li>
+<li>type <code>fixnum</code></li>
+<li>type <code>bignum</code></li>
+<li>function <code>=</code></li>
+<li>function <code>/=</code></li>
+<li>function <code>&lt;</code></li>
+<li>function <code>&gt;</code></li>
+<li>function <code>&lt;=</code></li>
+<li>function <code>&gt;=</code></li>
+<li>function <code>max</code></li>
+<li>function <code>min</code></li>
+<li>function <code>minusp</code></li>
+<li>function <code>plusp</code></li>
+<li>function <code>zerop</code></li>
+<li>function <code>floor</code></li>
+<li>function <code>ffloor</code></li>
+<li>function <code>ceiling</code></li>
+<li>function <code>fceiling</code></li>
+<li>function <code>truncate</code></li>
+<li>function <code>ftruncate</code></li>
+<li>function <code>round</code></li>
+<li>function <code>fround</code></li>
+<li>function <code>sin</code></li>
+<li>function <code>cos</code></li>
+<li>function <code>tan</code></li>
+<li>function <code>asin</code></li>
+<li>function <code>acos</code></li>
+<li>function <code>atan</code></li>
+<li>constant variable <code>pi</code></li>
+<li>function <code>sinh</code></li>
+<li>function <code>cosh</code></li>
+<li>function <code>tanh</code></li>
+<li>function <code>asinh</code></li>
+<li>function <code>acosh</code></li>
+<li>function <code>atanh</code></li>
+<li>function <code>*</code></li>
+<li>function <code>+</code></li>
+<li>function <code>-</code></li>
+<li>function <code>/</code></li>
+<li>function <code>1+</code></li>
+<li>function <code>1-</code></li>
+<li>function <code>abs</code></li>
+<li>function <code>evenp</code></li>
+<li>function <code>oddp</code></li>
+<li>function <code>exp</code></li>
+<li>function <code>expt</code></li>
+<li>function <code>gcd</code></li>
+<li>macro <code>incf</code></li>
+<li>macro <code>decf</code></li>
+<li>function <code>lcm</code></li>
+<li>function <code>log</code></li>
+<li>function <code>mod</code></li>
+<li>function <code>rem</code></li>
+<li>function <code>signum</code></li>
+<li>function <code>sqrt</code></li>
+<li>function <code>isqrt</code></li>
+<li>system class <code>random-state</code></li>
+<li>function <code>make-random-state</code></li>
+<li>function <code>random</code></li>
+<li>function <code>random-state-p</code></li>
+<li>variable <code>*random-state*</code></li>
+<li>function <code>numberp</code></li>
+<li>function <code>cis</code></li>
+<li>function <code>complex</code></li>
+<li>function <code>complexp</code></li>
+<li>function <code>conjugate</code></li>
+<li>function <code>phase</code></li>
+<li>function <code>realpart</code></li>
+<li>function <code>imagpart</code></li>
+<li>function <code>upgraded-complex-part-type</code></li>
+<li>function <code>realp</code></li>
+<li>function <code>numerator</code></li>
+<li>function <code>denominator</code></li>
+<li>function <code>rational</code></li>
+<li>function <code>rationalize</code></li>
+<li>function <code>rationalp</code></li>
+<li>function <code>ash</code></li>
+<li>function <code>integer-length</code></li>
+<li>function <code>integerp</code></li>
+<li>function <code>parse-integer</code></li>
+<li>function <code>boole</code></li>
+<li>constant variable <code>boole-1</code></li>
+<li>constant variable <code>boole-2</code></li>
+<li>constant variable <code>boole-and</code></li>
+<li>constant variable <code>boole-andc1</code></li>
+<li>constant variable <code>boole-andc2</code></li>
+<li>constant variable <code>boole-c1</code></li>
+<li>constant variable <code>boole-c2</code></li>
+<li>constant variable <code>boole-clr</code></li>
+<li>constant variable <code>boole-eqv</code></li>
+<li>constant variable <code>boole-ior</code></li>
+<li>constant variable <code>boole-nand</code></li>
+<li>constant variable <code>boole-nor</code></li>
+<li>constant variable <code>boole-orc1</code></li>
+<li>constant variable <code>boole-orc2</code></li>
+<li>constant variable <code>boole-set</code></li>
+<li>constant variable <code>boole-xor</code></li>
+<li>function <code>logand</code></li>
+<li>function <code>logandc1</code></li>
+<li>function <code>logandc2</code></li>
+<li>function <code>logeqv</code></li>
+<li>function <code>logior</code></li>
+<li>function <code>lognand</code></li>
+<li>function <code>lognor</code></li>
+<li>function <code>lognot</code></li>
+<li>function <code>logorc1</code></li>
+<li>function <code>logorc2</code></li>
+<li>function <code>logxor</code></li>
+<li>function <code>logbitp</code></li>
+<li>function <code>logcount</code></li>
+<li>function <code>logtest</code></li>
+<li>function <code>byte</code></li>
+<li>function <code>byte-size</code></li>
+<li>function <code>byte-position</code></li>
+<li>function <code>deposit-field</code></li>
+<li>function <code>dpb</code></li>
+<li>accessor <code>ldb</code></li>
+<li>function <code>ldb-test</code></li>
+<li>accessor <code>mask-field</code></li>
+<li>constant variable <code>most-positive-fixnum</code></li>
+<li>constant variable <code>most-negative-fixnum</code></li>
+<li>function <code>decode-float</code></li>
+<li>function <code>scale-float</code></li>
+<li>function <code>float-radix</code></li>
+<li>function <code>float-sign</code></li>
+<li>function <code>float-digits</code></li>
+<li>function <code>float-precision</code></li>
+<li>function <code>integer-decode-float</code></li>
+<li>function <code>float</code></li>
+<li>function <code>floatp</code></li>
+<li>constant variable <code>most-positive-short-float</code></li>
+<li>constant variable <code>least-positive-short-float</code></li>
+<li>constant variable <code>least-positive-normalized-short-float</code></li>
+<li>constant variable <code>most-positive-double-float</code></li>
+<li>constant variable <code>least-positive-double-float</code></li>
+<li>constant variable <code>least-positive-normalized-double-float</code></li>
+<li>constant variable <code>most-positive-long-float</code></li>
+<li>constant variable <code>least-positive-long-float</code></li>
+<li>constant variable <code>least-positive-normalized-long-float</code></li>
+<li>constant variable <code>most-positive-single-float</code></li>
+<li>constant variable <code>least-positive-single-float</code></li>
+<li>constant variable <code>least-positive-normalized-single-float</code></li>
+<li>constant variable <code>most-negative-short-float</code></li>
+<li>constant variable <code>least-negative-short-float</code></li>
+<li>constant variable <code>least-negative-normalized-short-float</code></li>
+<li>constant variable <code>most-negative-single-float</code></li>
+<li>constant variable <code>least-negative-single-float</code></li>
+<li>constant variable <code>least-negative-normalized-single-float</code></li>
+<li>constant variable <code>most-negative-double-float</code></li>
+<li>constant variable <code>least-negative-double-float</code></li>
+<li>constant variable <code>least-negative-normalized-double-float</code></li>
+<li>constant variable <code>most-negative-long-float</code></li>
+<li>constant variable <code>least-negative-long-float</code></li>
+<li>constant variable <code>least-negative-normalized-long-float</code></li>
+<li>constant variable <code>short-float-epsilon</code></li>
+<li>constant variable <code>short-float-negative-epsilon</code></li>
+<li>constant variable <code>single-float-epsilon</code></li>
+<li>constant variable <code>single-float-negative-epsilon</code></li>
+<li>constant variable <code>double-float-epsilon</code></li>
+<li>constant variable <code>double-float-negative-epsilon</code></li>
+<li>constant variable <code>long-float-epsilon</code></li>
+<li>constant variable <code>long-float-negative-epsilon</code></li>
+<li>condition <code>type arithmetic-error</code></li>
+<li>function <code>arithmetic-error-operands</code></li>
+<li>function <code>arithmetic-error-operation</code></li>
+<li>condition <code>type division-by-zero</code></li>
+<li>condition <code>type floating-point-invalid-operation</code></li>
+<li>condition <code>type floating-point-inexact</code></li>
+<li>condition <code>type floating-point-overflow</code></li>
+<li>condition <code>type floating-point-underflow</code></li>
+</ul>
+<h0 id="11">11 字符的字典<a class="headerlink" href="#11" title="Permanent link">&para;</a></h0>
+<ul>
+<li>system class <code>character</code></li>
+<li>type <code>base-char</code></li>
+<li>type <code>standard-char</code></li>
+<li>type <code>extended-char</code></li>
+<li>function <code>char=</code></li>
+<li>function <code>char/=</code></li>
+<li>function <code>char&lt;</code></li>
+<li>function <code>char&gt;</code></li>
+<li>function <code>char&lt;=</code></li>
+<li>function <code>char&gt;=</code></li>
+<li>function <code>char-equal</code></li>
+<li>function <code>char-not-equal</code></li>
+<li>function <code>char-lessp</code></li>
+<li>function <code>char-greaterp</code></li>
+<li>function <code>char-not-greaterp</code></li>
+<li>function <code>char-not-lessp</code></li>
+<li>function <code>character</code></li>
+<li>function <code>characterp</code></li>
+<li>function <code>alpha-char-p</code></li>
+<li>function <code>alphanumericp</code></li>
+<li>function <code>digit-char</code></li>
+<li>function <code>digit-char-p</code></li>
+<li>function <code>graphic-char-p</code></li>
+<li>function <code>standard-char-p</code></li>
+<li>function <code>char-upcase</code></li>
+<li>function <code>char-downcase</code></li>
+<li>function <code>upper-case-p</code></li>
+<li>function <code>lower-case-p</code></li>
+<li>function <code>both-case-p</code></li>
+<li>function <code>char-code</code></li>
+<li>function <code>char-int</code></li>
+<li>function <code>code-char</code></li>
+<li>constant variable <code>char-code-limit</code></li>
+<li>function <code>char-name</code></li>
+<li>function <code>name-char</code></li>
+</ul>
+<h0 id="12-cons">12 Cons的字典<a class="headerlink" href="#12-cons" title="Permanent link">&para;</a></h0>
+<ul>
+<li>system class <code>list</code></li>
+<li>system class <code>null</code></li>
+<li>system class <code>cons</code></li>
+<li>type <code>atom</code></li>
+<li>function <code>cons</code></li>
+<li>function <code>consp</code></li>
+<li>function <code>atom</code></li>
+<li>function <code>rplaca, rplacd</code></li>
+<li>accessor <code>car</code></li>
+<li>accessor <code>cdr</code></li>
+<li>accessor <code>caar</code></li>
+<li>accessor <code>cadr</code></li>
+<li>accessor <code>cdar</code></li>
+<li>accessor <code>cddr</code></li>
+<li>accessor <code>caaar</code></li>
+<li>accessor <code>caadr</code></li>
+<li>accessor <code>cadar</code></li>
+<li>accessor <code>caddr</code></li>
+<li>accessor <code>cdaar</code></li>
+<li>accessor <code>cdadr</code></li>
+<li>accessor <code>cddar</code></li>
+<li>accessor <code>cdddr</code></li>
+<li>accessor <code>caaaar</code></li>
+<li>accessor <code>caaadr</code></li>
+<li>accessor <code>caadar</code></li>
+<li>accessor <code>caaddr</code></li>
+<li>accessor <code>cadaar</code></li>
+<li>accessor <code>cadadr</code></li>
+<li>accessor <code>caddar</code></li>
+<li>accessor <code>cadddr</code></li>
+<li>accessor <code>cdaaar</code></li>
+<li>accessor <code>cdaadr</code></li>
+<li>accessor <code>cdadar</code></li>
+<li>accessor <code>cdaddr</code></li>
+<li>accessor <code>cddaar</code></li>
+<li>accessor <code>cddadr</code></li>
+<li>accessor <code>cdddar</code></li>
+<li>accessor <code>cddddr</code></li>
+<li>function <code>copy-tree</code></li>
+<li>function <code>sublis</code></li>
+<li>function <code>nsublis</code></li>
+<li>function <code>subst</code></li>
+<li>function <code>subst-if</code></li>
+<li>function <code>subst-if-not</code></li>
+<li>function <code>nsubst</code></li>
+<li>function <code>nsubst-if</code></li>
+<li>function <code>nsubst-if-not</code></li>
+<li>function <code>tree-equal</code></li>
+<li>function <code>copy-list</code></li>
+<li>function <code>list</code></li>
+<li>function <code>list*</code></li>
+<li>function <code>list-length</code></li>
+<li>function <code>listp</code></li>
+<li>function <code>make-list</code></li>
+<li>macro <code>push</code></li>
+<li>macro <code>pop</code></li>
+<li>accessor <code>first</code></li>
+<li>accessor <code>second</code></li>
+<li>accessor <code>third</code></li>
+<li>accessor <code>fourth</code></li>
+<li>accessor <code>fifth</code></li>
+<li>accessor <code>sixth</code></li>
+<li>accessor <code>seventh</code></li>
+<li>accessor <code>eighth</code></li>
+<li>accessor <code>ninth</code></li>
+<li>accessor <code>tenth</code></li>
+<li>accessor <code>nth</code></li>
+<li>function <code>endp</code></li>
+<li>function <code>null</code></li>
+<li>function <code>nconc</code></li>
+<li>function <code>append</code></li>
+<li>function <code>revappend</code></li>
+<li>function <code>nreconc</code></li>
+<li>function <code>butlast</code></li>
+<li>function <code>nbutlast</code></li>
+<li>function <code>last</code></li>
+<li>function <code>ldiff</code></li>
+<li>function <code>tailp</code></li>
+<li>function <code>nthcdr</code></li>
+<li>accessor <code>rest</code></li>
+<li>function <code>member</code></li>
+<li>function <code>member-if</code></li>
+<li>function <code>member-if-not</code></li>
+<li>function <code>mapc</code></li>
+<li>function <code>mapcar</code></li>
+<li>function <code>mapcan</code></li>
+<li>function <code>mapl</code></li>
+<li>function <code>maplist</code></li>
+<li>function <code>mapcon</code></li>
+<li>function <code>acons</code></li>
+<li>function <code>assoc</code></li>
+<li>function <code>assoc-if</code></li>
+<li>function <code>assoc-if-not</code></li>
+<li>function <code>copy-alist</code></li>
+<li>function <code>pairlis</code></li>
+<li>function <code>rassoc</code></li>
+<li>function <code>rassoc-if</code></li>
+<li>function <code>rassoc-if-not</code></li>
+<li>function <code>get-properties</code></li>
+<li>accessor <code>getf</code></li>
+<li>macro <code>remf</code></li>
+<li>function <code>intersection</code></li>
+<li>function <code>nintersection</code></li>
+<li>function <code>adjoin</code></li>
+<li>macro <code>pushnew</code></li>
+<li>function <code>set-difference</code></li>
+<li>function <code>nset-difference</code></li>
+<li>function <code>set-exclusive-or</code></li>
+<li>function <code>nset-exclusive-or</code></li>
+<li>function <code>subsetp</code></li>
+<li>function <code>union</code></li>
+<li>function <code>nunion</code></li>
+</ul>
+<h0 id="13">13 数组的字典<a class="headerlink" href="#13" title="Permanent link">&para;</a></h0>
+<ul>
+<li>system class <code>array</code></li>
+<li>type <code>simple-array</code></li>
+<li>system class <code>vector</code></li>
+<li>type <code>simple-vector</code></li>
+<li>system class <code>bit-vector</code></li>
+<li>type <code>simple-bit-vector</code></li>
+<li>function <code>make-array</code></li>
+<li>function <code>adjust-array</code></li>
+<li>function <code>adjustable-array-p</code></li>
+<li>accessor <code>aref</code></li>
+<li>function <code>array-dimension</code></li>
+<li>function <code>array-dimensions</code></li>
+<li>function <code>array-element-type</code></li>
+<li>function <code>array-has-fill-pointer-p</code></li>
+<li>function <code>array-displacement</code></li>
+<li>function <code>array-in-bounds-p</code></li>
+<li>function <code>array-rank</code></li>
+<li>function <code>array-row-major-index</code></li>
+<li>function <code>array-total-size</code></li>
+<li>function <code>arrayp</code></li>
+<li>accessor <code>fill-pointer</code></li>
+<li>accessor <code>row-major-aref</code></li>
+<li>function <code>upgraded-array-element-type</code></li>
+<li>constant variable <code>array-dimension-limit</code></li>
+<li>constant variable <code>array-rank-limit</code></li>
+<li>constant variable <code>array-total-size-limit</code></li>
+<li>function <code>simple-vector-p</code></li>
+<li>accessor <code>svref</code></li>
+<li>function <code>vector</code></li>
+<li>function <code>vector-pop</code></li>
+<li>function <code>vector-push</code></li>
+<li>function <code>vector-push-extend</code></li>
+<li>function <code>vectorp</code></li>
+<li>accessor <code>bit</code></li>
+<li>accessor <code>sbit</code></li>
+<li>function <code>bit-and</code></li>
+<li>function <code>bit-andc1</code></li>
+<li>function <code>bit-andc2</code></li>
+<li>function <code>bit-eqv</code></li>
+<li>function <code>bit-ior</code></li>
+<li>function <code>bit-nand</code></li>
+<li>function <code>bit-nor</code></li>
+<li>function <code>bit-not</code></li>
+<li>function <code>bit-orc1</code></li>
+<li>function <code>bit-orc2</code></li>
+<li>function <code>bit-xor</code></li>
+<li>function <code>bit-vector-p</code></li>
+<li>function <code>simple-bit-vector-p</code></li>
+</ul>
+<h0 id="14">14 字符串的字典<a class="headerlink" href="#14" title="Permanent link">&para;</a></h0>
+<ul>
+<li>system class <code>string</code></li>
+<li>type <code>base-string</code></li>
+<li>type <code>simple-string</code></li>
+<li>type <code>simple-base-string</code></li>
+<li>function <code>simple-string-p</code></li>
+<li>accessor <code>char</code></li>
+<li>accessor <code>schar</code></li>
+<li>function <code>string</code></li>
+<li>function <code>string-upcase</code></li>
+<li>function <code>string-downcase</code></li>
+<li>function <code>string-capitalize</code></li>
+<li>function <code>nstring-upcase</code></li>
+<li>function <code>nstring-downcase</code></li>
+<li>function <code>nstring-capitalize</code></li>
+<li>function <code>string-trim</code></li>
+<li>function <code>string-left-trim</code></li>
+<li>function <code>string-right-trim</code></li>
+<li>function <code>string=</code></li>
+<li>function <code>string/=</code></li>
+<li>function <code>string&lt;</code></li>
+<li>function <code>string&gt;</code></li>
+<li>function <code>string&lt;=</code></li>
+<li>function <code>string&gt;=</code></li>
+<li>function <code>string-equal</code></li>
+<li>function <code>string-not-equal</code></li>
+<li>function <code>string-lessp</code></li>
+<li>function <code>string-greaterp</code></li>
+<li>function <code>string-not-greaterp</code></li>
+<li>function <code>string-not-lessp</code></li>
+<li>function <code>stringp</code></li>
+<li>function <code>make-string</code></li>
+</ul>
+<h0 id="15">15 序列的字典<a class="headerlink" href="#15" title="Permanent link">&para;</a></h0>
+<ul>
+<li>system class <code>sequence</code></li>
+<li>function <code>copy-seq</code></li>
+<li>accessor <code>elt</code></li>
+<li>function <code>fill</code></li>
+<li>function <code>make-sequence</code></li>
+<li>accessor <code>subseq</code></li>
+<li>function <code>map</code></li>
+<li>function <code>map-into</code></li>
+<li>function <code>reduce</code></li>
+<li>function <code>count</code></li>
+<li>function <code>count-if</code></li>
+<li>function <code>count-if-not</code></li>
+<li>function <code>length</code></li>
+<li>function <code>reverse</code></li>
+<li>function <code>nreverse</code></li>
+<li>function <code>sort</code></li>
+<li>function <code>stable-sort</code></li>
+<li>function <code>find</code></li>
+<li>function <code>find-if</code></li>
+<li>function <code>find-if-not</code></li>
+<li>function <code>position</code></li>
+<li>function <code>position-if</code></li>
+<li>function <code>position-if-not</code></li>
+<li>function <code>search</code></li>
+<li>function <code>mismatch</code></li>
+<li>function <code>replace</code></li>
+<li>function <code>substitute</code></li>
+<li>function <code>substitute-if</code></li>
+<li>function <code>substitute-if-not</code></li>
+<li>function <code>nsubstitute</code></li>
+<li>function <code>nsubstitute-if</code></li>
+<li>function <code>nsubstitute-if-not</code></li>
+<li>function <code>concatenate</code></li>
+<li>function <code>merge</code></li>
+<li>function <code>remove</code></li>
+<li>function <code>remove-if</code></li>
+<li>function <code>remove-if-not</code></li>
+<li>function <code>delete</code></li>
+<li>function <code>delete-if</code></li>
+<li>function <code>delete-if-not</code></li>
+<li>function <code>remove-duplicates</code></li>
+<li>function <code>delete-duplicates</code></li>
+</ul>
+<h0 id="16">16 哈希表的字典<a class="headerlink" href="#16" title="Permanent link">&para;</a></h0>
+<ul>
+<li>system class <code>hash-table</code></li>
+<li>function <code>make-hash-table</code></li>
+<li>function <code>hash-table-p</code></li>
+<li>function <code>hash-table-count</code></li>
+<li>function <code>hash-table-rehash-size</code></li>
+<li>function <code>hash-table-rehash-threshold</code></li>
+<li>function <code>hash-table-size</code></li>
+<li>function <code>hash-table-test</code></li>
+<li>accessor <code>gethash</code></li>
+<li>function <code>remhash</code></li>
+<li>function <code>maphash</code></li>
+<li>macro <code>with-hash-table-iterator</code></li>
+<li>function <code>clrhash</code></li>
+<li>function <code>sxhash</code></li>
+</ul>
+<h0 id="17">17 文件名的字典<a class="headerlink" href="#17" title="Permanent link">&para;</a></h0>
+<ul>
+<li>system class <code>PATHNAME</code></li>
+<li>system class <code>LOGICAL-PATHNAME</code></li>
+<li>Function <code>PATHNAME</code></li>
+<li>Function <code>MAKE-PATHNAME</code></li>
+<li>Function <code>PATHNAMEP</code></li>
+<li>Function <code>PATHNAME-HOST</code></li>
+<li>Function <code>PATHNAME-DEVICE</code></li>
+<li>Function <code>PATHNAME-DIRECTORY</code></li>
+<li>Function <code>PATHNAME-NAME</code></li>
+<li>Function <code>PATHNAME-TYPE</code></li>
+<li>Function <code>PATHNAME-VERSION</code></li>
+<li>Function <code>LOAD-LOGICAL-PATHNAME-TRANSLATIONS</code></li>
+<li>Accessor <code>LOGICAL-PATHNAME-TRANSLATIONS</code></li>
+<li>Function <code>LOGICAL-PATHNAME</code></li>
+<li>Variable <code>*DEFAULT-PATHNAME-DEFAULTS*</code></li>
+<li>Function <code>NAMESTRING</code></li>
+<li>Function <code>FILE-NAMESTRING</code></li>
+<li>Function <code>DIRECTORY-NAMESTRING</code></li>
+<li>Function <code>HOST-NAMESTRING</code></li>
+<li>Function <code>ENOUGH-NAMESTRING</code></li>
+<li>Function <code>PARSE-NAMESTRING</code></li>
+<li>Function <code>WILD-PATHNAME-P</code></li>
+<li>Function <code>PATHNAME-MATCH-P</code></li>
+<li>Function <code>TRANSLATE-LOGICAL-PATHNAME</code></li>
+<li>Function <code>TRANSLATE-PATHNAME</code></li>
+<li>Function <code>MERGE-PATHNAMES</code></li>
+</ul>
+<h0 id="18">18 文件的字典<a class="headerlink" href="#18" title="Permanent link">&para;</a></h0>
+<ul>
+<li>function <code>directory</code></li>
+<li>function <code>probe-file</code></li>
+<li>function <code>ensure-directories-exist</code></li>
+<li>function <code>truename</code></li>
+<li>function <code>file-author</code></li>
+<li>function <code>file-write-date</code></li>
+<li>function <code>rename-file</code></li>
+<li>function <code>delete-file</code></li>
+<li>condition type <code>file-error</code></li>
+<li>function <code>file-error-pathname</code></li>
+</ul>
+<h0 id="19">19 流的字典<a class="headerlink" href="#19" title="Permanent link">&para;</a></h0>
+<ul>
+<li>system class <code>stream</code></li>
+<li>system class <code>broadcast-stream</code></li>
+<li>system class <code>concatenated-stream</code></li>
+<li>system class <code>echo-stream</code></li>
+<li>system class <code>file-stream</code></li>
+<li>system class <code>string-stream</code></li>
+<li>system class <code>synonym-stream</code></li>
+<li>system class <code>two-way-stream</code></li>
+<li>function <code>input-stream-p</code></li>
+<li>function <code>output-stream-p</code></li>
+<li>function <code>interactive-stream-p</code></li>
+<li>function <code>open-stream-p</code></li>
+<li>function <code>stream-element-type</code></li>
+<li>function <code>streamp</code></li>
+<li>function <code>read-byte</code></li>
+<li>function <code>write-byte</code></li>
+<li>function <code>peek-char</code></li>
+<li>function <code>read-char</code></li>
+<li>function <code>read-char-no-hang</code></li>
+<li>function <code>terpri</code></li>
+<li>function <code>fresh-line</code></li>
+<li>function <code>unread-char</code></li>
+<li>function <code>write-char</code></li>
+<li>function <code>read-line</code></li>
+<li>function <code>write-string</code></li>
+<li>function <code>write-line</code></li>
+<li>function <code>read-sequence</code></li>
+<li>function <code>write-sequence</code></li>
+<li>function <code>file-length</code></li>
+<li>function <code>file-position</code></li>
+<li>function <code>file-string-length</code></li>
+<li>function <code>open</code></li>
+<li>function <code>stream-external-format</code></li>
+<li>macro <code>with-open-file</code></li>
+<li>function <code>close</code></li>
+<li>macro <code>with-open-stream</code></li>
+<li>function <code>listen</code></li>
+<li>function <code>clear-input</code></li>
+<li>function <code>finish-output</code></li>
+<li>function <code>force-output</code></li>
+<li>function <code>clear-output</code></li>
+<li>function <code>y-or-n-p</code></li>
+<li>function <code>yes-or-no-p</code></li>
+<li>function <code>make-synonym-stream</code></li>
+<li>function <code>synonym-stream-symbol</code></li>
+<li>function <code>broadcast-stream-streams</code></li>
+<li>function <code>make-broadcast-stream</code></li>
+<li>function <code>make-two-way-stream</code></li>
+<li>function <code>two-way-stream-input-stream</code></li>
+<li>function <code>two-way-stream-output-stream</code></li>
+<li>function <code>echo-stream-input-stream</code></li>
+<li>function <code>echo-stream-output-stream</code></li>
+<li>function <code>make-echo-stream</code></li>
+<li>function <code>concatenated-stream-streams</code></li>
+<li>function <code>make-concatenated-stream</code></li>
+<li>function <code>get-output-stream-string</code></li>
+<li>function <code>make-string-input-stream</code></li>
+<li>function <code>make-string-output-stream</code></li>
+<li>macro <code>with-input-from-string</code></li>
+<li>macro <code>with-output-to-string</code></li>
+<li>variable <code>*debug-io*</code></li>
+<li>variable <code>*error-output*</code></li>
+<li>variable <code>*query-io*</code></li>
+<li>variable <code>*standard-input*</code></li>
+<li>variable <code>*standard-output*</code></li>
+<li>variable <code>*trace-output*</code></li>
+<li>variable <code>*terminal-io*</code></li>
+<li>condition type <code>stream-error</code></li>
+<li>function <code>stream-error-stream</code></li>
+<li>condition type <code>end-of-file</code></li>
+</ul>
+<h0 id="20">20 打印器的字典<a class="headerlink" href="#20" title="Permanent link">&para;</a></h0>
+<ul>
+<li>function <code>copy-pprint-dispatch</code></li>
+<li>macro <code>formatter</code></li>
+<li>function <code>pprint-dispatch</code></li>
+<li>local <code>macro pprint-exit-if-list-exhausted</code></li>
+<li>function <code>pprint-fill</code></li>
+<li>function <code>pprint-linear</code></li>
+<li>function <code>pprint-tabular</code></li>
+<li>function <code>pprint-indent</code></li>
+<li>macro <code>pprint-logical-block</code></li>
+<li>function <code>pprint-newline</code></li>
+<li>local <code>macro pprint-pop</code></li>
+<li>function <code>pprint-tab</code></li>
+<li>standard generic function <code>print-object</code></li>
+<li>macro <code>print-unreadable-object</code></li>
+<li>function <code>set-pprint-dispatch</code></li>
+<li>function <code>write</code></li>
+<li>function <code>prin1</code></li>
+<li>function <code>print</code></li>
+<li>function <code>pprint</code></li>
+<li>function <code>princ</code></li>
+<li>function <code>write-to-string</code></li>
+<li>function <code>prin1-to-string</code></li>
+<li>function <code>princ-to-string</code></li>
+<li>variable <code>*print-array*</code></li>
+<li>variable <code>*print-base*</code></li>
+<li>variable <code>*print-radix*</code></li>
+<li>variable <code>*print-case*</code></li>
+<li>variable <code>*print-circle*</code></li>
+<li>variable <code>*print-escape*</code></li>
+<li>variable <code>*print-gensym*</code></li>
+<li>variable <code>*print-level*</code></li>
+<li>variable <code>*print-length*</code></li>
+<li>variable <code>*print-lines*</code></li>
+<li>variable <code>*print-miser-width*</code></li>
+<li>variable <code>*print-pprint-dispatch*</code></li>
+<li>variable <code>*print-pretty*</code></li>
+<li>variable <code>*print-readably*</code></li>
+<li>variable <code>*print-right-margin*</code></li>
+<li>condition type <code>print-not-readable</code></li>
+<li>function <code>print-not-readable-object</code></li>
+<li>function <code>format</code></li>
+</ul>
+<h0 id="21">21 读取器的字典<a class="headerlink" href="#21" title="Permanent link">&para;</a></h0>
+<ul>
+<li>system class <code>readtable</code></li>
+<li>function <code>copy-readtable</code></li>
+<li>function <code>make-dispatch-macro-character</code></li>
+<li>function <code>read</code></li>
+<li>function <code>read-preserving-whitespace</code></li>
+<li>function <code>read-delimited-list</code></li>
+<li>function <code>read-from-string</code></li>
+<li>accessor <code>readtable-case</code></li>
+<li>function <code>readtablep</code></li>
+<li>function <code>set-dispatch-macro-character</code></li>
+<li>function <code>get-dispatch-macro-character</code></li>
+<li>function <code>set-macro-character</code></li>
+<li>function <code>get-macro-character</code></li>
+<li>function <code>set-syntax-from-char</code></li>
+<li>macro <code>with-standard-io-syntax</code></li>
+<li>variable <code>*read-base*</code></li>
+<li>variable <code>*read-default-float-format*</code></li>
+<li>variable <code>*read-eval*</code></li>
+<li>variable <code>*read-suppress*</code></li>
+<li>variable <code>*readtable*</code></li>
+<li>condition type <code>reader-error</code></li>
+</ul>
+<h0 id="22">22 系统构造的字典<a class="headerlink" href="#22" title="Permanent link">&para;</a></h0>
+<ul>
+<li>function <code>compile-file</code></li>
+<li>function <code>compile-file-pathname</code></li>
+<li>function <code>load</code></li>
+<li>macro <code>with-compilation-unit</code></li>
+<li>variable <code>*features*</code></li>
+<li>variable <code>*compile-file-pathname*</code></li>
+<li>variable <code>*compile-file-truename*</code></li>
+<li>variable <code>*load-pathname*</code></li>
+<li>variable <code>*load-truename*</code></li>
+<li>variable <code>*compile-print*</code></li>
+<li>variable <code>*compile-verbose*</code></li>
+<li>variable <code>*load-print*</code></li>
+<li>variable <code>*load-verbose*</code></li>
+<li>variable <code>*modules*</code></li>
+<li>function <code>provide</code></li>
+<li>function <code>require</code></li>
+</ul>
+<h0 id="23">23 环境的字典<a class="headerlink" href="#23" title="Permanent link">&para;</a></h0>
+<ul>
+<li>function <code>decode-universal-time</code></li>
+<li>function <code>encode-universal-time</code></li>
+<li>function <code>get-universal-time</code></li>
+<li>function <code>get-decoded-time</code></li>
+<li>function <code>sleep</code></li>
+<li>function <code>apropos</code></li>
+<li>function <code>apropos-list</code></li>
+<li>function <code>describe</code></li>
+<li>standard generic function <code>describe-object</code></li>
+<li>macro <code>trace</code></li>
+<li>macro <code>untrace</code></li>
+<li>macro <code>step</code></li>
+<li>macro <code>time</code></li>
+<li>constant variable <code>internal-time-units-per-second</code></li>
+<li>function <code>get-internal-real-time</code></li>
+<li>function <code>get-internal-run-time</code></li>
+<li>function <code>disassemble</code></li>
+<li>standard generic function <code>documentation</code></li>
+<li>standard generic function `</li>
+<li>function <code>room</code></li>
+<li>function <code>ed</code></li>
+<li>function <code>inspect</code></li>
+<li>function <code>dribble</code></li>
+<li>variable <code>-</code></li>
+<li>variable <code>+</code></li>
+<li>variable <code>++</code></li>
+<li>variable <code>+++</code></li>
+<li>variable <code>*</code></li>
+<li>variable <code>**</code></li>
+<li>variable <code>***</code></li>
+<li>variable <code>/</code></li>
+<li>variable <code>//</code></li>
+<li>variable <code>///</code></li>
+<li>function <code>lisp-implementation-type</code></li>
+<li>function <code>lisp-implementation-version</code></li>
+<li>function <code>short-site-name</code></li>
+<li>function <code>long-site-name</code></li>
+<li>function <code>machine-instance</code></li>
+<li>function <code>machine-type</code></li>
+<li>function <code>machine-version</code></li>
+<li>function <code>software-type</code></li>
+<li>function <code>software-version</code></li>
+<li>function <code>user-homedir-pathname</code></li>
+</ul>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../../../..", "features": ["navigation.tabs"], "search": "../../../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../../../assets/javascripts/bundle.bd41221c.min.js"></script>
+      
+        <script src="../../../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+      
+    
+  </body>
+</html>
