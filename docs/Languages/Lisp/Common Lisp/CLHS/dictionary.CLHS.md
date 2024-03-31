@@ -11,16 +11,16 @@ number headings: auto, first-level 1, max 6, 1.1
 - macro `lambda`
 - function `compile`
 - function `eval`
-- specialoperator `eval-when`
-- specialoperator `load-time-value`
-- specialoperator `quote`
+- special operator `eval-when`
+- special operator `load-time-value`
+- special operator `quote`
 - accessor `compiler-macro-function`
 - macro `define-compiler-macro`
 - macro `defmacro`
 - accessor `macro-function`
 - function `macroexpand`
 - macro `define-symbol-macro`
-- specialoperator `symbol-macrolet`
+- special operator `symbol-macrolet`
 - variable ``*macroexpand-hook*``
 - function `proclaim`
 - macro `declaim`
@@ -33,8 +33,8 @@ number headings: auto, first-level 1, max 6, 1.1
 - declaration `declaration`
 - declaration `optimize`
 - declaration `special`
-- specialoperator `locally`
-- specialoperator `the`
+- special operator `locally`
+- special operator `the`
 - function `special-operator-p`
 - function `constantp`
 
@@ -42,35 +42,35 @@ number headings: auto, first-level 1, max 6, 1.1
 
 - type `nil`
 - type `boolean`
-- systemclass `function`
+- system class `function`
 - type `compiled-function`
-- systemclass `generic-function`
-- systemclass `standard-generic-function`
-- systemclass `class`
-- systemclass `built-in-class`
-- systemclass `structure-class`
-- systemclass `standard-class`
-- systemclass `method`
-- systemclass `standard-method`
+- system class `generic-function`
+- system class `standard-generic-function`
+- system class `class`
+- system class `built-in-class`
+- system class `structure-class`
+- system class `standard-class`
+- system class `method`
+- system class `standard-method`
 - class `structure-object`
 - class `standard-object`
-- systemclass `method-combination`
-- systemclass `t`
-- typespecifier `satisfies`
-- typespecifier `member`
-- typespecifier `not`
-- typespecifier `and`
-- typespecifier `or`
-- typespecifier `values`
-- typespecifier `eql`
+- system class `method-combination`
+- system class `t`
+- type specifier `satisfies`
+- type specifier `member`
+- type specifier `not`
+- type specifier `and`
+- type specifier `or`
+- type specifier `values`
+- type specifier `eql`
 - function `coerce`
 - macro `deftype`
 - function `subtypep`
 - function `type-of`
 - function `typep`
-- conditiontype `type-error`
+- condition type `type-error`
 - function `type-error-datum`
-- conditiontype `simple-type-error`
+- condition type `simple-type-error`
 
 
 # 3 数据和控制流的字典
@@ -80,34 +80,34 @@ number headings: auto, first-level 1, max 6, 1.1
 - accessor `fdefinition`
 - function `fboundp`
 - function `fmakunbound`
-- specialoperator `flet`
+- special operator `flet`
 - function `funcall`
-- specialoperator `function`
+- special operator `function`
 - function `function-lambda-expression`
 - function `functionp`
 - function `compiled-function-p`
-- constantvariable `call-arguments-limit`
-- constantvariable `lambda-list-keywords`
-- constantvariable `lambda-parameters-limit`
+- constant variable `call-arguments-limit`
+- constant variable `lambda-list-keywords`
+- constant variable `lambda-parameters-limit`
 - macro `defconstant`
 - macro `defparameter`
 - macro `defvar`
 - macro `destructuring-bind`
-- specialoperator `let`
-- specialoperator `progv`
+- special operator `let`
+- special operator `progv`
 - specialform `setq`
 - macro `psetq`
-- specialoperator `block`
-- specialoperator `catch`
-- specialoperator `go`
-- specialoperator `return-from`
+- special operator `block`
+- special operator `catch`
+- special operator `go`
+- special operator `return-from`
 - macro `return`
-- specialoperator `tagbody`
-- specialoperator `throw`
-- specialoperator `unwind-protect`
-- constantvariable `nil`
+- special operator `tagbody`
+- special operator `throw`
+- special operator `unwind-protect`
+- constant variable `nil`
 - function `not`
-- constantvariable `t`
+- constant variable `t`
 - function `eq`
 - function `eql`
 - function `equal`
@@ -118,24 +118,24 @@ number headings: auto, first-level 1, max 6, 1.1
 - function `every`
 - macro `and`
 - macro `cond`
-- specialoperator `if`
+- special operator `if`
 - macro `or`
 - macro `when`
 - macro `unless`
 - macro `case`
 - macro `typecase`
 - macro `multiple-value-bind`
-- specialoperator `multiple-value-call`
+- special operator `multiple-value-call`
 - macro `multiple-value-list`
-- specialoperator `multiple-value-prog1`
+- special operator `multiple-value-prog1`
 - macro `multiple-value-setq`
 - accessor `values`
 - function `values-list`
-- constantvariable `multiple-values-limit`
+- constant variable `multiple-values-limit`
 - macro `nth-value`
 - macro `prog`
 - macro `prog1`
-- specialoperator `progn`
+- special operator `progn`
 - macro `define-modify-macro`
 - macro `defsetf`
 - macro `define-setf-expander`
@@ -143,9 +143,9 @@ number headings: auto, first-level 1, max 6, 1.1
 - macro `setf`
 - macro `shiftf`
 - macro `rotatef`
-- conditiontype `control-error`
-- conditiontype `program-error`
-- conditiontype `undefined-function`
+- condition type `control-error`
+- condition type `program-error`
+- condition type `undefined-function`
 
 # 4 迭代的字典
 
@@ -153,31 +153,31 @@ number headings: auto, first-level 1, max 6, 1.1
 - macro `dotimes`
 - macro `dolist`
 - macro `loop`
-- localmacro `loop-finish`
+- local macro `loop-finish`
 
 # 5 对象的字典
 
-- standardgenericfunction `function-keywords`
+- standard generic function `function-keywords`
 - function `ensure-generic-function`
-- standardgenericfunction `allocate-instance`
-- standardgenericfunction `reinitialize-instance`
-- standardgenericfunction `shared-initialize`
-- standardgenericfunction `update-instance-for-different-class`
-- standardgenericfunction `update-instance-for-redefined-class`
-- standardgenericfunction `change-class`
+- standard generic function `allocate-instance`
+- standard generic function `reinitialize-instance`
+- standard generic function `shared-initialize`
+- standard generic function `update-instance-for-different-class`
+- standard generic function `update-instance-for-redefined-class`
+- standard generic function `change-class`
 - function `slot-boundp`
 - function `slot-exists-p`
 - function `slot-makunbound`
-- standardgenericfunction `slot-missing`
-- standardgenericfunction `slot-unbound`
+- standard generic function `slot-missing`
+- standard generic function `slot-unbound`
 - function `slot-value`
-- standardgenericfunction `method-qualifiers`
-- standardgenericfunction `no-applicable-method`
-- standardgenericfunction `no-next-method`
-- standardgenericfunction `remove-method`
-- standardgenericfunction `make-instance`
-- standardgenericfunction `make-instances-obsolete`
-- standardgenericfunction `make-load-form`
+- standard generic function `method-qualifiers`
+- standard generic function `no-applicable-method`
+- standard generic function `no-next-method`
+- standard generic function `remove-method`
+- standard generic function `make-instance`
+- standard generic function `make-instances-obsolete`
+- standard generic function `make-load-form`
 - function `make-load-form-saving-slots`
 - macro `with-accessors`
 - macro `with-slots`
@@ -185,16 +185,16 @@ number headings: auto, first-level 1, max 6, 1.1
 - macro `defgeneric`
 - macro `defmethod`
 - accessor `find-class`
-- localfunction `next-method-p`
-- localmacro `call-method, make-method`
-- localfunction `call-next-method`
-- standardgenericfunction `compute-applicable-methods`
+- local function `next-method-p`
+- local macro `call-method, make-method`
+- local function `call-next-method`
+- standard generic function `compute-applicable-methods`
 - macro `define-method-combination`
-- standardgenericfunction `find-method`
-- standardgenericfunction `add-method`
-- standardgenericfunction `initialize-instance`
-- standardgenericfunction `class-name`
-- standardgenericfunction `
+- standard generic function `find-method`
+- standard generic function `add-method`
+- standard generic function `initialize-instance`
+- standard generic function `class-name`
+- standard generic function `
 - function `class-of`
 - condition `type unbound-slot`
 - function `unbound-slot-instance`
@@ -207,27 +207,27 @@ number headings: auto, first-level 1, max 6, 1.1
 
 # 7 状况的字典
 
-- conditiontype `condition`
-- conditiontype `warning`
-- conditiontype `style-warning`
-- conditiontype `serious-condition`
-- conditiontype `error`
-- conditiontype `cell-error`
+- condition type `condition`
+- condition type `warning`
+- condition type `style-warning`
+- condition type `serious-condition`
+- condition type `error`
+- condition type `cell-error`
 - function `cell-error-name`
-- conditiontype `parse-error`
-- conditiontype `storage-condition`
+- condition type `parse-error`
+- condition type `storage-condition`
 - macro `assert`
 - function `error`
 - function `cerror`
 - macro `check-type`
-- conditiontype `simple-error`
+- condition type `simple-error`
 - function `invalid-method-error`
 - function `method-combination-error`
 - function `signal`
-- conditiontype `simple-condition`
+- condition type `simple-condition`
 - function `simple-condition-format-control`
 - function `warn`
-- conditiontype `simple-warning`
+- condition type `simple-warning`
 - function `invoke-debugger`
 - function `break`
 - variable ``*debugger-hook*``
@@ -237,7 +237,7 @@ number headings: auto, first-level 1, max 6, 1.1
 - macro `ignore-errors`
 - macro `define-condition`
 - function `make-condition`
-- systemclass `restart`
+- system class `restart`
 - function `compute-restarts`
 - function `find-restart`
 - function `invoke-restart`
@@ -281,7 +281,7 @@ number headings: auto, first-level 1, max 6, 1.1
 # 9 包的字典
 
 
-- systemclass `package`
+- system class `package`
 - function `export`
 - function `find-symbol`
 - function `find-package`
@@ -309,23 +309,23 @@ number headings: auto, first-level 1, max 6, 1.1
 - function `package-used-by-list`
 - function `packagep`
 - variable `*package*`
-- conditiontype `package-error`
+- condition type `package-error`
 - function `package-error-package`
 
 
 # 10 数值的字典
 
-- systemclass `number`
-- systemclass `complex`
-- systemclass `real`
-- systemclass `float`
+- system class `number`
+- system class `complex`
+- system class `real`
+- system class `float`
 - type `short-float`
 - type `single-float`
 - type `double-float`
 - type `long-float`
-- systemclass `rational`
-- systemclass `ratio`
-- systemclass `integer`
+- system class `rational`
+- system class `ratio`
+- system class `integer`
 - type `signed-byte`
 - type `unsigned-byte`
 - type `specifier mod`
@@ -357,7 +357,7 @@ number headings: auto, first-level 1, max 6, 1.1
 - function `asin`
 - function `acos`
 - function `atan`
-- constantvariable `pi`
+- constant variable `pi`
 - function `sinh`
 - function `cosh`
 - function `tanh`
@@ -385,7 +385,7 @@ number headings: auto, first-level 1, max 6, 1.1
 - function `signum`
 - function `sqrt`
 - function `isqrt`
-- systemclass `random-state`
+- system class `random-state`
 - function `make-random-state`
 - function `random`
 - function `random-state-p`
@@ -410,22 +410,22 @@ number headings: auto, first-level 1, max 6, 1.1
 - function `integerp`
 - function `parse-integer`
 - function `boole`
-- constantvariable `boole-1`
-- constantvariable `boole-2`
-- constantvariable `boole-and`
-- constantvariable `boole-andc1`
-- constantvariable `boole-andc2`
-- constantvariable `boole-c1`
-- constantvariable `boole-c2`
-- constantvariable `boole-clr`
-- constantvariable `boole-eqv`
-- constantvariable `boole-ior`
-- constantvariable `boole-nand`
-- constantvariable `boole-nor`
-- constantvariable `boole-orc1`
-- constantvariable `boole-orc2`
-- constantvariable `boole-set`
-- constantvariable `boole-xor`
+- constant variable `boole-1`
+- constant variable `boole-2`
+- constant variable `boole-and`
+- constant variable `boole-andc1`
+- constant variable `boole-andc2`
+- constant variable `boole-c1`
+- constant variable `boole-c2`
+- constant variable `boole-clr`
+- constant variable `boole-eqv`
+- constant variable `boole-ior`
+- constant variable `boole-nand`
+- constant variable `boole-nor`
+- constant variable `boole-orc1`
+- constant variable `boole-orc2`
+- constant variable `boole-set`
+- constant variable `boole-xor`
 - function `logand`
 - function `logandc1`
 - function `logandc2`
@@ -448,8 +448,8 @@ number headings: auto, first-level 1, max 6, 1.1
 - accessor `ldb`
 - function `ldb-test`
 - accessor `mask-field`
-- constantvariable `most-positive-fixnum`
-- constantvariable `most-negative-fixnum`
+- constant variable `most-positive-fixnum`
+- constant variable `most-negative-fixnum`
 - function `decode-float`
 - function `scale-float`
 - function `float-radix`
@@ -459,38 +459,38 @@ number headings: auto, first-level 1, max 6, 1.1
 - function `integer-decode-float`
 - function `float`
 - function `floatp`
-- constantvariable `most-positive-short-float`
-- constantvariable `least-positive-short-float`
-- constantvariable `least-positive-normalized-short-float`
-- constantvariable `most-positive-double-float`
-- constantvariable `least-positive-double-float`
-- constantvariable `least-positive-normalized-double-float`
-- constantvariable `most-positive-long-float`
-- constantvariable `least-positive-long-float`
-- constantvariable `least-positive-normalized-long-float`
-- constantvariable `most-positive-single-float`
-- constantvariable `least-positive-single-float`
-- constantvariable `least-positive-normalized-single-float`
-- constantvariable `most-negative-short-float`
-- constantvariable `least-negative-short-float`
-- constantvariable `least-negative-normalized-short-float`
-- constantvariable `most-negative-single-float`
-- constantvariable `least-negative-single-float`
-- constantvariable `least-negative-normalized-single-float`
-- constantvariable `most-negative-double-float`
-- constantvariable `least-negative-double-float`
-- constantvariable `least-negative-normalized-double-float`
-- constantvariable `most-negative-long-float`
-- constantvariable `least-negative-long-float`
-- constantvariable `least-negative-normalized-long-float`
-- constantvariable `short-float-epsilon`
-- constantvariable `short-float-negative-epsilon`
-- constantvariable `single-float-epsilon`
-- constantvariable `single-float-negative-epsilon`
-- constantvariable `double-float-epsilon`
-- constantvariable `double-float-negative-epsilon`
-- constantvariable `long-float-epsilon`
-- constantvariable `long-float-negative-epsilon`
+- constant variable `most-positive-short-float`
+- constant variable `least-positive-short-float`
+- constant variable `least-positive-normalized-short-float`
+- constant variable `most-positive-double-float`
+- constant variable `least-positive-double-float`
+- constant variable `least-positive-normalized-double-float`
+- constant variable `most-positive-long-float`
+- constant variable `least-positive-long-float`
+- constant variable `least-positive-normalized-long-float`
+- constant variable `most-positive-single-float`
+- constant variable `least-positive-single-float`
+- constant variable `least-positive-normalized-single-float`
+- constant variable `most-negative-short-float`
+- constant variable `least-negative-short-float`
+- constant variable `least-negative-normalized-short-float`
+- constant variable `most-negative-single-float`
+- constant variable `least-negative-single-float`
+- constant variable `least-negative-normalized-single-float`
+- constant variable `most-negative-double-float`
+- constant variable `least-negative-double-float`
+- constant variable `least-negative-normalized-double-float`
+- constant variable `most-negative-long-float`
+- constant variable `least-negative-long-float`
+- constant variable `least-negative-normalized-long-float`
+- constant variable `short-float-epsilon`
+- constant variable `short-float-negative-epsilon`
+- constant variable `single-float-epsilon`
+- constant variable `single-float-negative-epsilon`
+- constant variable `double-float-epsilon`
+- constant variable `double-float-negative-epsilon`
+- constant variable `long-float-epsilon`
+- constant variable `long-float-negative-epsilon`
 - condition `type arithmetic-error`
 - function `arithmetic-error-operands`
 - function `arithmetic-error-operation`
@@ -502,7 +502,7 @@ number headings: auto, first-level 1, max 6, 1.1
 
 # 11 字符的字典
 
-- systemclass `character`
+- system class `character`
 - type `base-char`
 - type `standard-char`
 - type `extended-char`
@@ -534,15 +534,15 @@ number headings: auto, first-level 1, max 6, 1.1
 - function `char-code`
 - function `char-int`
 - function `code-char`
-- constantvariable `char-code-limit`
+- constant variable `char-code-limit`
 - function `char-name`
 - function `name-char`
 
 # 12 Cons的字典
 
-- systemclass `list`
-- systemclass `null`
-- systemclass `cons`
+- system class `list`
+- system class `null`
+- system class `cons`
 - type `atom`
 - function `cons`
 - function `consp`
@@ -656,11 +656,11 @@ number headings: auto, first-level 1, max 6, 1.1
 
 # 13 数组的字典
 
-- systemclass `array`
+- system class `array`
 - type `simple-array`
-- systemclass `vector`
+- system class `vector`
 - type `simple-vector`
-- systemclass `bit-vector`
+- system class `bit-vector`
 - type `simple-bit-vector`
 - function `make-array`
 - function `adjust-array`
@@ -679,9 +679,9 @@ number headings: auto, first-level 1, max 6, 1.1
 - accessor `fill-pointer`
 - accessor `row-major-aref`
 - function `upgraded-array-element-type`
-- constantvariable `array-dimension-limit`
-- constantvariable `array-rank-limit`
-- constantvariable `array-total-size-limit`
+- constant variable `array-dimension-limit`
+- constant variable `array-rank-limit`
+- constant variable `array-total-size-limit`
 - function `simple-vector-p`
 - accessor `svref`
 - function `vector`
@@ -708,7 +708,7 @@ number headings: auto, first-level 1, max 6, 1.1
 
 # 14 字符串的字典
 
-- systemclass `string`
+- system class `string`
 - type `base-string`
 - type `simple-string`
 - type `simple-base-string`
@@ -743,7 +743,7 @@ number headings: auto, first-level 1, max 6, 1.1
 
 # 15 序列的字典
 
-- systemclass `sequence`
+- system class `sequence`
 - function `copy-seq`
 - accessor `elt`
 - function `fill`
@@ -789,7 +789,7 @@ number headings: auto, first-level 1, max 6, 1.1
 
 # 16 哈希表的字典
 
-- systemclass `hash-table`
+- system class `hash-table`
 - function `make-hash-table`
 - function `hash-table-p`
 - function `hash-table-count`
@@ -807,8 +807,8 @@ number headings: auto, first-level 1, max 6, 1.1
 
 # 17 文件名的字典
 
-- SystemClass `PATHNAME`
-- SystemClass `LOGICAL-PATHNAME`
+- system class `PATHNAME`
+- system class `LOGICAL-PATHNAME`
 - Function `PATHNAME`
 - Function `MAKE-PATHNAME`
 - Function `PATHNAMEP`
@@ -845,19 +845,19 @@ number headings: auto, first-level 1, max 6, 1.1
 - function `file-write-date`
 - function `rename-file`
 - function `delete-file`
-- conditiontype `file-error`
+- condition type `file-error`
 - function `file-error-pathname`
 
 # 19 流的字典
 
-- systemclass `stream`
-- systemclass `broadcast-stream`
-- systemclass `concatenated-stream`
-- systemclass `echo-stream`
-- systemclass `file-stream`
-- systemclass `string-stream`
-- systemclass `synonym-stream`
-- systemclass `two-way-stream`
+- system class `stream`
+- system class `broadcast-stream`
+- system class `concatenated-stream`
+- system class `echo-stream`
+- system class `file-stream`
+- system class `string-stream`
+- system class `synonym-stream`
+- system class `two-way-stream`
 - function `input-stream-p`
 - function `output-stream-p`
 - function `interactive-stream-p`
@@ -917,9 +917,9 @@ number headings: auto, first-level 1, max 6, 1.1
 - variable ``*standard-output*``
 - variable ``*trace-output*``
 - variable ``*terminal-io*``
-- conditiontype `stream-error`
+- condition type `stream-error`
 - function `stream-error-stream`
-- conditiontype `end-of-file`
+- condition type `end-of-file`
 
 
 # 20 打印器的字典
@@ -936,7 +936,7 @@ number headings: auto, first-level 1, max 6, 1.1
 - function `pprint-newline`
 - local `macro pprint-pop`
 - function `pprint-tab`
-- standardgenericfunction `print-object`
+- standard generic function `print-object`
 - macro `print-unreadable-object`
 - function `set-pprint-dispatch`
 - function `write`
@@ -962,14 +962,14 @@ number headings: auto, first-level 1, max 6, 1.1
 - variable ``*print-pretty*``
 - variable ``*print-readably*``
 - variable ``*print-right-margin*``
-- conditiontype `print-not-readable`
+- condition type `print-not-readable`
 - function `print-not-readable-object`
 - function `format`
 
 
 # 21 读取器的字典
 
-- systemclass `readtable`
+- system class `readtable`
 - function `copy-readtable`
 - function `make-dispatch-macro-character`
 - function `read`
@@ -989,7 +989,7 @@ number headings: auto, first-level 1, max 6, 1.1
 - variable ``*read-eval*``
 - variable ``*read-suppress*``
 - variable ``*readtable*``
-- conditiontype `reader-error`
+- condition type `reader-error`
 
 
 # 22 系统构造的字典
@@ -1021,17 +1021,17 @@ number headings: auto, first-level 1, max 6, 1.1
 - function `apropos`
 - function `apropos-list`
 - function `describe`
-- standardgenericfunction `describe-object`
+- standard generic function `describe-object`
 - macro `trace`
 - macro `untrace`
 - macro `step`
 - macro `time`
-- constantvariable `internal-time-units-per-second`
+- constant variable `internal-time-units-per-second`
 - function `get-internal-real-time`
 - function `get-internal-run-time`
 - function `disassemble`
-- standardgenericfunction `documentation`
-- standardgenericfunction `
+- standard generic function `documentation`
+- standard generic function `
 - function `room`
 - function `ed`
 - function `inspect`

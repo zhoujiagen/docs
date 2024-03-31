@@ -5,84 +5,84 @@ tags:
   - CLHS
 ---
 
-> There are 978 symbols in the COMMON-LISP package.
-# `&allow-other-keys`
-# `&aux`
-# `&body`
-# `&environment`
-# `&key`
-# `&optional`
-# `&rest`
-# `&whole`
-# ``*``
-# ``**``
-# ``***``
-# ``*break-on-signals*``
-# ``*compile-file-pathname*``
-# ``*compile-file-truename*``
-# ``*compile-print*``
-# ``*compile-verbose*``
-# ``*debug-io*``
-# ``*debugger-hook*``
-# ``*default-pathname-defaults*``
-# ``*error-output*``
-# ``*features*``
-# ``*gensym-counter*``
-# ``*load-pathname*``
-# ``*load-print*``
-# ``*load-truename*``
-# ``*load-verbose*``
-# ``*macroexpand-hook*``
-# ``*modules*``
-# ``*package*``
-# ``*print-array*``
-# ``*print-base*``
-# ``*print-case*``
-# ``*print-circle*``
-# ``*print-escape*``
-# ``*print-gensym*``
-# ``*print-length*``
-# ``*print-level*``
-# ``*print-lines*``
-# ``*print-miser-width*``
-# ``*print-pprint-dispatch*``
-# ``*print-pretty*``
-# ``*print-radix*``
-# ``*print-readably*``
-# ``*print-right-margin*``
-# ``*query-io*``
-# ``*random-state*``
-# ``*read-base*``
-# ``*read-default-float-format*``
-# ``*read-eval*``
-# ``*read-suppress*``
-# ``*readtable*``
-# ``*standard-input*``
-# ``*standard-output*``
-# ``*terminal-io*``
-# ``*trace-output*``
-# ``+``
-# ``++``
-# ``+++``
-# ``-``
-# ``/``
-# ``//``
-# ``///``
-# ``/=``
-# ``1+``
-# ``1-``
-# ``<``
-# ``<=``
-# ``=``
-# ``>``
-# ``>=``
-# `abort`
-# `abs`
-# `acons`
-# `acos`
-# `acosh`
-# `add-method`
-# `adjoin`
+> There are 978 symbols in the `COMMON-LISP` package.
+# 1 `&allow-other-keys`
+# 2 `&aux`
+# 3 `&body`
+# 4 `&environment`
+# 5 `&key`
+# 6 `&optional`
+# 7 `&rest`
+# 8 `&whole`
+# 9 ``*``
+# 10 ``**``
+# 11 ``***``
+# 12 ``*break-on-signals*``
+# 13 ``*compile-file-pathname*``
+# 14 ``*compile-file-truename*``
+# 15 ``*compile-print*``
+# 16 ``*compile-verbose*``
+# 17 ``*debug-io*``
+# 18 ``*debugger-hook*``
+# 19 ``*default-pathname-defaults*``
+# 20 ``*error-output*``
+# 21 ``*features*``
+# 22 ``*gensym-counter*``
+# 23 ``*load-pathname*``
+# 24 ``*load-print*``
+# 25 ``*load-truename*``
+# 26 ``*load-verbose*``
+# 27 ``*macroexpand-hook*``
+# 28 ``*modules*``
+# 29 ``*package*``
+# 30 ``*print-array*``
+# 31 ``*print-base*``
+# 32 ``*print-case*``
+# 33 ``*print-circle*``
+# 34 ``*print-escape*``
+# 35 ``*print-gensym*``
+# 36 ``*print-length*``
+# 37 ``*print-level*``
+# 38 ``*print-lines*``
+# 39 ``*print-miser-width*``
+# 40 ``*print-pprint-dispatch*``
+# 41 ``*print-pretty*``
+# 42 ``*print-radix*``
+# 43 ``*print-readably*``
+# 44 ``*print-right-margin*``
+# 45 ``*query-io*``
+# 46 ``*random-state*``
+# 47 ``*read-base*``
+# 48 ``*read-default-float-format*``
+# 49 ``*read-eval*``
+# 50 ``*read-suppress*``
+# 51 ``*readtable*``
+# 52 ``*standard-input*``
+# 53 ``*standard-output*``
+# 54 ``*terminal-io*``
+# 55 ``*trace-output*``
+# 56 ``+``
+# 57 ``++``
+# 58 ``+++``
+# 59 ``-``
+# 60 ``/``
+# 61 ``//``
+# 62 ``///``
+# 63 ``/=``
+# 64 ``1+``
+# 65 ``1-``
+# 66 ``<``
+# 67 ``<=``
+# 68 ``=``
+# 69 ``>``
+# 70 ``>=``
+# 71 `abort`
+# 72 `abs`
+# 73 `acons`
+# 74 `acos`
+# 75 `acosh`
+# 76 `add-method`
+# 77 `adjoin`
 
 > [!note] "Function"
 **Syntax**:
@@ -114,12 +114,12 @@ adjoin item list &key key test test-not => new-list
 
 
 
-# `adjust-array`
-# `adjustable-array-p`
-# `allocate-instance`
-# `alpha-char-p`
-# `alphanumericp`
-# `and`
+# 78 `adjust-array`
+# 79 `adjustable-array-p`
+# 80 `allocate-instance`
+# 81 `alpha-char-p`
+# 82 `alphanumericp`
+# 83 `and`
 
 > [!tip] "Macro"
 **Syntax**:
@@ -183,38 +183,38 @@ and form* => result*
 ```
 
 
-# `append`
-# `apply`
-# `apropos`
-# `apropos-list`
-# `aref`
-# `arithmetic-error`
-# `arithmetic-error-operands`
-# `arithmetic-error-operation`
-# `array`
-# `array-dimension`
-# `array-dimension-limit`
-# `array-dimensions`
-# `array-displacement`
-# `array-element-type`
-# `array-has-fill-pointer-p`
-# `array-in-bounds-p`
-# `array-rank`
-# `array-rank-limit`
-# `array-row-major-index`
-# `array-total-size`
-# `array-total-size-limit`
-# `arrayp`
-# `ash`
-# `asin`
-# `asinh`
-# `assert`
-# `assoc`
-# `assoc-if`
-# `assoc-if-not`
-# `atan`
-# `atanh`
-# `atom`
+# 84 `append`
+# 85 `apply`
+# 86 `apropos`
+# 87 `apropos-list`
+# 88 `aref`
+# 89 `arithmetic-error`
+# 90 `arithmetic-error-operands`
+# 91 `arithmetic-error-operation`
+# 92 `array`
+# 93 `array-dimension`
+# 94 `array-dimension-limit`
+# 95 `array-dimensions`
+# 96 `array-displacement`
+# 97 `array-element-type`
+# 98 `array-has-fill-pointer-p`
+# 99 `array-in-bounds-p`
+# 100 `array-rank`
+# 101 `array-rank-limit`
+# 102 `array-row-major-index`
+# 103 `array-total-size`
+# 104 `array-total-size-limit`
+# 105 `arrayp`
+# 106 `ash`
+# 107 `asin`
+# 108 `asinh`
+# 109 `assert`
+# 110 `assoc`
+# 111 `assoc-if`
+# 112 `assoc-if-not`
+# 113 `atan`
+# 114 `atanh`
+# 115 `atom`
 
 > [!note] "Function"
 **Syntax**:
@@ -246,24 +246,24 @@ atom object => generalized-boolean
 
 
 
-# `base-char`
-# `base-string`
-# `bignum`
-# `bit`
-# `bit-and`
-# `bit-andc1`
-# `bit-andc2`
-# `bit-eqv`
-# `bit-ior`
-# `bit-nand`
-# `bit-nor`
-# `bit-not`
-# `bit-orc1`
-# `bit-orc2`
-# `bit-vector`
-# `bit-vector-p`
-# `bit-xor`
-# `block`
+# 116 `base-char`
+# 117 `base-string`
+# 118 `bignum`
+# 119 `bit`
+# 120 `bit-and`
+# 121 `bit-andc1`
+# 122 `bit-andc2`
+# 123 `bit-eqv`
+# 124 `bit-ior`
+# 125 `bit-nand`
+# 126 `bit-nor`
+# 127 `bit-not`
+# 128 `bit-orc1`
+# 129 `bit-orc2`
+# 130 `bit-vector`
+# 131 `bit-vector-p`
+# 132 `bit-xor`
+# 133 `block`
 
 > [!attention] "Special Operator"
 **Syntax**:
@@ -295,39 +295,39 @@ block name form* => result*
 
 
 
-# `boole`
-# `boole-1`
-# `boole-2`
-# `boole-and`
-# `boole-andc1`
-# `boole-andc2`
-# `boole-c1`
-# `boole-c2`
-# `boole-clr`
-# `boole-eqv`
-# `boole-ior`
-# `boole-nand`
-# `boole-nor`
-# `boole-orc1`
-# `boole-orc2`
-# `boole-set`
-# `boole-xor`
-# `boolean`
-# `both-case-p`
-# `boundp`
-# `break`
-# `broadcast-stream`
-# `broadcast-stream-streams`
-# `built-in-class`
-# `butlast`
-# `byte`
-# `byte-position`
-# `byte-size`
+# 134 `boole`
+# 135 `boole-1`
+# 136 `boole-2`
+# 137 `boole-and`
+# 138 `boole-andc1`
+# 139 `boole-andc2`
+# 140 `boole-c1`
+# 141 `boole-c2`
+# 142 `boole-clr`
+# 143 `boole-eqv`
+# 144 `boole-ior`
+# 145 `boole-nand`
+# 146 `boole-nor`
+# 147 `boole-orc1`
+# 148 `boole-orc2`
+# 149 `boole-set`
+# 150 `boole-xor`
+# 151 `boolean`
+# 152 `both-case-p`
+# 153 `boundp`
+# 154 `break`
+# 155 `broadcast-stream`
+# 156 `broadcast-stream-streams`
+# 157 `built-in-class`
+# 158 `butlast`
+# 159 `byte`
+# 160 `byte-position`
+# 161 `byte-size`
 
-# `call-arguments-limit`
-# `call-method`
-# `call-next-method`
-# `cdr`
+# 162 `call-arguments-limit`
+# 163 `call-method`
+# 164 `call-next-method`
+# 165 `cdr`
 
 > [!tip] "Accessor"
 **Syntax**:
@@ -419,8 +419,8 @@ cddddr x => object
 
 
 
-# `case`
-# `catch`
+# 166 `case`
+# 167 `catch`
 
 > [!attention] "Special Operator"
 **Syntax**:
@@ -452,8 +452,8 @@ catch tag form* => result*
 
 
 
-# `ccase`
-# `ftruncate`
+# 168 `ccase`
+# 169 `ftruncate`
 
 > [!note] "Function"
 **Syntax**:
@@ -493,59 +493,59 @@ fround number &optional divisor => quotient, remainder
 
 
 
-# `cell-error`
-# `cell-error-name`
-# `cerror`
-# `change-class`
-# `char`
-# `char-code`
-# `char-code-limit`
-# `char-downcase`
-# `char-equal`
-# `char-greaterp`
-# `char-int`
-# `char-lessp`
-# `char-name`
-# `char-not-equal`
-# `char-not-greaterp`
-# `char-not-lessp`
-# `char-upcase`
-# `char/=`
-# `char<`
-# `char<=`
-# `char=`
-# `char>`
-# `char>=`
-# `character`
-# `characterp`
-# `check-type`
-# `cis`
-# `class`
-# `class-name`
-# `class-of`
-# `clear-input`
-# `clear-output`
-# `close`
-# `clrhash`
-# `code-char`
-# `coerce`
-# `compilation-speed`
-# `compile`
-# `compile-file`
-# `compile-file-pathname`
-# `compiled-function`
-# `compiled-function-p`
-# `compiler-macro`
-# `compiler-macro-function`
-# `complement`
-# `complex`
-# `complexp`
-# `compute-applicable-methods`
-# `compute-restarts`
-# `concatenate`
-# `concatenated-stream`
-# `concatenated-stream-streams`
-# `cond`
+# 170 `cell-error`
+# 171 `cell-error-name`
+# 172 `cerror`
+# 173 `change-class`
+# 174 `char`
+# 175 `char-code`
+# 176 `char-code-limit`
+# 177 `char-downcase`
+# 178 `char-equal`
+# 179 `char-greaterp`
+# 180 `char-int`
+# 181 `char-lessp`
+# 182 `char-name`
+# 183 `char-not-equal`
+# 184 `char-not-greaterp`
+# 185 `char-not-lessp`
+# 186 `char-upcase`
+# 187 `char/=`
+# 188 `char<`
+# 189 `char<=`
+# 190 `char=`
+# 191 `char>`
+# 192 `char>=`
+# 193 `character`
+# 194 `characterp`
+# 195 `check-type`
+# 196 `cis`
+# 197 `class`
+# 198 `class-name`
+# 199 `class-of`
+# 200 `clear-input`
+# 201 `clear-output`
+# 202 `close`
+# 203 `clrhash`
+# 204 `code-char`
+# 205 `coerce`
+# 206 `compilation-speed`
+# 207 `compile`
+# 208 `compile-file`
+# 209 `compile-file-pathname`
+# 210 `compiled-function`
+# 211 `compiled-function-p`
+# 212 `compiler-macro`
+# 213 `compiler-macro-function`
+# 214 `complement`
+# 215 `complex`
+# 216 `complexp`
+# 217 `compute-applicable-methods`
+# 218 `compute-restarts`
+# 219 `concatenate`
+# 220 `concatenated-stream`
+# 221 `concatenated-stream-streams`
+# 222 `cond`
 
 > [!tip] "Macro"
 **Syntax**:
@@ -611,9 +611,9 @@ a =>  3
 
 
 
-# `condition`
-# `conjugate`
-# `cons`
+# 223 `condition`
+# 224 `conjugate`
+# 225 `cons`
 
 > [!note] "Function"
 **Syntax**:
@@ -646,7 +646,7 @@ cons object-1 object-2 => cons
 
 
 
-# `consp`
+# 226 `consp`
 
 > [!note] "Function"
 **Syntax**:
@@ -675,12 +675,12 @@ consp object => generalized-boolean
 
 **Notes**:
 
-# `constantly`
-# `constantp`
-# `continue`
-# `control-error`
-# `copy-alist`
-# `copy-list`
+# 227 `constantly`
+# 228 `constantp`
+# 229 `continue`
+# 230 `control-error`
+# 231 `copy-alist`
+# 232 `copy-list`
 
 > [!note] "Function"
 **Syntax**:
@@ -713,42 +713,42 @@ copy-list list => copy
 
 
 
-# `copy-pprint-dispatch`
-# `copy-readtable`
-# `copy-seq`
-# `copy-structure`
-# `copy-symbol`
-# `copy-tree`
-# `cos`
-# `cosh`
-# `count`
-# `count-if`
-# `count-if-not`
-# `ctypecase`
-# `debug`
-# `decf`
-# `declaim`
-# `declaration`
-# `declare`
-# `decode-float`
-# `decode-universal-time`
-# `defclass`
-# `defconstant`
-# `defgeneric`
-# `define-compiler-macro`
-# `define-condition`
-# `define-method-combination`
-# `define-modify-macro`
-# `define-setf-expander`
-# `define-symbol-macro`
-# `defmacro`
-# `defmethod`
-# `defpackage`
-# `defparameter`
-# `defsetf`
-# `defstruct`
-# `deftype`
-# `defun`
+# 233 `copy-pprint-dispatch`
+# 234 `copy-readtable`
+# 235 `copy-seq`
+# 236 `copy-structure`
+# 237 `copy-symbol`
+# 238 `copy-tree`
+# 239 `cos`
+# 240 `cosh`
+# 241 `count`
+# 242 `count-if`
+# 243 `count-if-not`
+# 244 `ctypecase`
+# 245 `debug`
+# 246 `decf`
+# 247 `declaim`
+# 248 `declaration`
+# 249 `declare`
+# 250 `decode-float`
+# 251 `decode-universal-time`
+# 252 `defclass`
+# 253 `defconstant`
+# 254 `defgeneric`
+# 255 `define-compiler-macro`
+# 256 `define-condition`
+# 257 `define-method-combination`
+# 258 `define-modify-macro`
+# 259 `define-setf-expander`
+# 260 `define-symbol-macro`
+# 261 `defmacro`
+# 262 `defmethod`
+# 263 `defpackage`
+# 264 `defparameter`
+# 265 `defsetf`
+# 266 `defstruct`
+# 267 `deftype`
+# 268 `defun`
 
 
 > [!tip] "Macro"
@@ -783,25 +783,25 @@ defun function-name lambda-list [[declaration* | documentation]] form*
 
 
 
-# `defvar`
-# `delete`
-# `delete-duplicates`
-# `delete-file`
-# `delete-if`
-# `delete-if-not`
-# `delete-package`
-# `denominator`
-# `deposit-field`
-# `describe`
-# `describe-object`
-# `destructuring-bind`
-# `digit-char`
-# `digit-char-p`
-# `directory`
-# `directory-namestring`
-# `disassemble`
-# `division-by-zero`
-# `do, do*`
+# 269 `defvar`
+# 270 `delete`
+# 271 `delete-duplicates`
+# 272 `delete-file`
+# 273 `delete-if`
+# 274 `delete-if-not`
+# 275 `delete-package`
+# 276 `denominator`
+# 277 `deposit-field`
+# 278 `describe`
+# 279 `describe-object`
+# 280 `destructuring-bind`
+# 281 `digit-char`
+# 282 `digit-char-p`
+# 283 `directory`
+# 284 `directory-namestring`
+# 285 `disassemble`
+# 286 `division-by-zero`
+# 287 `do, do*`
 
 > [!tip] "Macro"
 **Syntax**:
@@ -842,12 +842,12 @@ do* ({var | (var [init-form [step-form]])}*)
 **Notes**:
 
 
-# `do-all-symbols`
-# `do-external-symbols`
-# `do-symbols`
-# `documentation`
-# `dolist`
-# `dotimes`
+# 288 `do-all-symbols`
+# 289 `do-external-symbols`
+# 290 `do-symbols`
+# 291 `documentation`
+# 292 `dolist`
+# 293 `dotimes`
 
 > [!tip] "Macro"
 **Syntax**:
@@ -882,25 +882,25 @@ dotimes (var count-form [result-form]) declaration* {tag | statement}*
 
 
 
-# `double-float`
-# `double-float-epsilon`
-# `double-float-negative-epsilon`
-# `dpb`
-# `dribble`
-# `dynamic-extent`
-# `ecase`
-# `echo-stream`
-# `echo-stream-input-stream`
-# `echo-stream-output-stream`
-# `ed`
-# `elt`
-# `encode-universal-time`
-# `end-of-file`
-# `endp`
-# `enough-namestring`
-# `ensure-directories-exist`
-# `ensure-generic-function`
-# `eq`
+# 294 `double-float`
+# 295 `double-float-epsilon`
+# 296 `double-float-negative-epsilon`
+# 297 `dpb`
+# 298 `dribble`
+# 299 `dynamic-extent`
+# 300 `ecase`
+# 301 `echo-stream`
+# 302 `echo-stream-input-stream`
+# 303 `echo-stream-output-stream`
+# 304 `ed`
+# 305 `elt`
+# 306 `encode-universal-time`
+# 307 `end-of-file`
+# 308 `endp`
+# 309 `enough-namestring`
+# 310 `ensure-directories-exist`
+# 311 `ensure-generic-function`
+# 312 `eq`
 
 > [!note] "Function"
 **Syntax**:
@@ -933,7 +933,7 @@ eq x y => generalized-boolean
 
 
 
-# `eql`
+# 313 `eql`
 
 > [!note] "Function"
 **Syntax**:
@@ -967,7 +967,7 @@ eql x y => generalized-boolean
 
 
 
-# `equal`
+# 314 `equal`
 
 > [!note] "Function"
 **Syntax**:
@@ -1001,11 +1001,11 @@ equal x y => generalized-boolean
 
 
 
-# `equalp`
-# `error`
-# `etypecase`
-# `eval`
-# `eval-when`
+# 315 `equalp`
+# 316 `error`
+# 317 `etypecase`
+# 318 `eval`
+# 319 `eval-when`
 
 > [!attention] "Special Operator"
 **Syntax**:
@@ -1038,7 +1038,7 @@ eval-when (situation*) form* => result*
 
 
 
-# `oddp`
+# 320 `oddp`
 
 > [!note] "Function"
 **Syntax**:
@@ -1070,35 +1070,35 @@ oddp integer => generalized-boolean
 
 
 
-# `every`
-# `exp`
-# `export`
-# `expt`
-# `extended-char`
-# `fboundp`
-# `fdefinition`
-# `file-author`
-# `file-error`
-# `file-error-pathname`
-# `file-length`
-# `file-namestring`
-# `file-position`
-# `file-stream`
-# `file-string-length`
-# `file-write-date`
-# `fill`
-# `fill-pointer`
-# `find`
-# `find-all-symbols`
-# `find-class`
-# `find-if`
-# `find-if-not`
-# `find-method`
-# `find-package`
-# `find-restart`
-# `find-symbol`
-# `finish-output`
-# `tenth`
+# 321 `every`
+# 322 `exp`
+# 323 `export`
+# 324 `expt`
+# 325 `extended-char`
+# 326 `fboundp`
+# 327 `fdefinition`
+# 328 `file-author`
+# 329 `file-error`
+# 330 `file-error-pathname`
+# 331 `file-length`
+# 332 `file-namestring`
+# 333 `file-position`
+# 334 `file-stream`
+# 335 `file-string-length`
+# 336 `file-write-date`
+# 337 `fill`
+# 338 `fill-pointer`
+# 339 `find`
+# 340 `find-all-symbols`
+# 341 `find-class`
+# 342 `find-if`
+# 343 `find-if-not`
+# 344 `find-method`
+# 345 `find-package`
+# 346 `find-restart`
+# 347 `find-symbol`
+# 348 `finish-output`
+# 349 `tenth`
 
 > [!tip] "Accessor"
 **Syntax**:
@@ -1147,8 +1147,8 @@ tenth list => object
 **Notes**:
 
 
-# `fixnum`
-# `macrolet`
+# 350 `fixnum`
+# 351 `macrolet`
 
 > [!attention] "Special Operator"
 **Syntax**:
@@ -1187,24 +1187,24 @@ macrolet ((name lambda-list [[local-declaration* | local-documentation]] local-f
 
 
 
-# `float`
-# `float-digits`
-# `float-precision`
-# `float-radix`
-# `float-sign`
-# `floating-point-inexact`
-# `floating-point-invalid-operation`
-# `floating-point-overflow`
-# `floating-point-underflow`
-# `floatp`
+# 352 `float`
+# 353 `float-digits`
+# 354 `float-precision`
+# 355 `float-radix`
+# 356 `float-sign`
+# 357 `floating-point-inexact`
+# 358 `floating-point-invalid-operation`
+# 359 `floating-point-overflow`
+# 360 `floating-point-underflow`
+# 361 `floatp`
 
-# `fmakunbound`
-# `force-output`
-# `format`
-# `formatter`
-# `fresh-line`
-# `ftype`
-# `funcall`
+# 362 `fmakunbound`
+# 363 `force-output`
+# 364 `format`
+# 365 `formatter`
+# 366 `fresh-line`
+# 367 `ftype`
+# 368 `funcall`
 
 > [!note] "Function"
 **Syntax**:
@@ -1260,7 +1260,7 @@ funcall function &rest args => result*
 `funcall`和普通函数调用之前的区别是, 前者是通过求值一个形式获得的函数, 而后者是在函数通常出现的位置做特殊解释获得的.
 
 
-# `function`
+# 369 `function`
 
 
 > [!attention] "Special Operator"
@@ -1293,26 +1293,26 @@ function name => function
 
 
 
-# `function-keywords`
-# `function-lambda-expression`
-# `functionp`
-# `gcd`
-# `generic-function`
-# `gensym`
-# `gentemp`
-# `get`
-# `get-decoded-time`
-# `get-dispatch-macro-character`
-# `get-internal-real-time`
-# `get-internal-run-time`
-# `get-macro-character`
-# `get-output-stream-string`
-# `get-properties`
-# `get-setf-expansion`
-# `get-universal-time`
-# `getf`
-# `gethash`
-# `go`
+# 370 `function-keywords`
+# 371 `function-lambda-expression`
+# 372 `functionp`
+# 373 `gcd`
+# 374 `generic-function`
+# 375 `gensym`
+# 376 `gentemp`
+# 377 `get`
+# 378 `get-decoded-time`
+# 379 `get-dispatch-macro-character`
+# 380 `get-internal-real-time`
+# 381 `get-internal-run-time`
+# 382 `get-macro-character`
+# 383 `get-output-stream-string`
+# 384 `get-properties`
+# 385 `get-setf-expansion`
+# 386 `get-universal-time`
+# 387 `getf`
+# 388 `gethash`
+# 389 `go`
 
 > [!attention] "Special Operator"
 **Syntax**:
@@ -1344,19 +1344,19 @@ go tag =>|
 
 
 
-# `graphic-char-p`
-# `handler-bind`
-# `handler-case`
-# `hash-table`
-# `hash-table-count`
-# `hash-table-p`
-# `hash-table-rehash-size`
-# `hash-table-rehash-threshold`
-# `hash-table-size`
-# `hash-table-test`
-# `host-namestring`
-# `identity`
-# `if`
+# 390 `graphic-char-p`
+# 391 `handler-bind`
+# 392 `handler-case`
+# 393 `hash-table`
+# 394 `hash-table-count`
+# 395 `hash-table-p`
+# 396 `hash-table-rehash-size`
+# 397 `hash-table-rehash-threshold`
+# 398 `hash-table-size`
+# 399 `hash-table-test`
+# 400 `host-namestring`
+# 401 `identity`
+# 402 `if`
 
 > [!attention] "Special Operator"
 **Syntax**:
@@ -1418,21 +1418,21 @@ if test-form then-form [else-form] => result*
 
 
 
-# `ignorable`
-# `ignore`
-# `ignore-errors`
-# `imagpart`
-# `import`
-# `in-package`
-# `incf`
-# `initialize-instance`
-# `inline`
-# `input-stream-p`
-# `inspect`
-# `integer`
-# `integer-decode-float`
-# `integer-length`
-# `integerp`
+# 403 `ignorable`
+# 404 `ignore`
+# 405 `ignore-errors`
+# 406 `imagpart`
+# 407 `import`
+# 408 `in-package`
+# 409 `incf`
+# 410 `initialize-instance`
+# 411 `inline`
+# 412 `input-stream-p`
+# 413 `inspect`
+# 414 `integer`
+# 415 `integer-decode-float`
+# 416 `integer-length`
+# 417 `integerp`
 
 
 > [!note] "Function"
@@ -1464,10 +1464,10 @@ integerp object => generalized-boolean
 
 
 
-# `interactive-stream-p`
-# `intern`
-# `internal-time-units-per-second`
-# `nintersection`
+# 418 `interactive-stream-p`
+# 419 `intern`
+# 420 `internal-time-units-per-second`
+# 421 `nintersection`
 
 > [!note] "Function"
 **Syntax**:
@@ -1499,17 +1499,17 @@ nintersection list-1 list-2 &key key test test-not => result-list
 
 
 
-# `invalid-method-error`
-# `invoke-debugger`
-# `invoke-restart`
-# `invoke-restart-interactively`
-# `isqrt`
-# `keyword`
-# `keywordp`
-# `lambda`
-# `lambda-list-keywords`
-# `lambda-parameters-limit`
-# `last`
+# 422 `invalid-method-error`
+# 423 `invoke-debugger`
+# 424 `invoke-restart`
+# 425 `invoke-restart-interactively`
+# 426 `isqrt`
+# 427 `keyword`
+# 428 `keywordp`
+# 429 `lambda`
+# 430 `lambda-list-keywords`
+# 431 `lambda-parameters-limit`
+# 432 `last`
 
 > [!note] "Function"
 **Syntax**:
@@ -1541,27 +1541,27 @@ last list &optional n => tail
 
 
 
-# `lcm`
-# `ldb`
-# `ldb-test`
-# `ldiff`
-# `least-negative-double-float`
-# `least-negative-long-float`
-# `least-negative-normalized-double-float`
-# `least-negative-normalized-long-float`
-# `least-negative-normalized-short-float`
-# `least-negative-normalized-single-float`
-# `least-negative-short-float`
-# `least-negative-single-float`
-# `least-positive-double-float`
-# `least-positive-long-float`
-# `least-positive-normalized-double-float`
-# `least-positive-normalized-long-float`
-# `least-positive-normalized-short-float`
-# `least-positive-normalized-single-float`
-# `least-positive-short-float`
-# `least-positive-single-float`
-# `length`
+# 433 `lcm`
+# 434 `ldb`
+# 435 `ldb-test`
+# 436 `ldiff`
+# 437 `least-negative-double-float`
+# 438 `least-negative-long-float`
+# 439 `least-negative-normalized-double-float`
+# 440 `least-negative-normalized-long-float`
+# 441 `least-negative-normalized-short-float`
+# 442 `least-negative-normalized-single-float`
+# 443 `least-negative-short-float`
+# 444 `least-negative-single-float`
+# 445 `least-positive-double-float`
+# 446 `least-positive-long-float`
+# 447 `least-positive-normalized-double-float`
+# 448 `least-positive-normalized-long-float`
+# 449 `least-positive-normalized-short-float`
+# 450 `least-positive-normalized-single-float`
+# 451 `least-positive-short-float`
+# 452 `least-positive-single-float`
+# 453 `length`
 
 > [!note] "Function"
 **Syntax**:
@@ -1593,7 +1593,7 @@ length sequence => n
 
 
 
-# `let*`
+# 454 `let*`
 
 > [!attention] "Special Operator"
 **Syntax**:
@@ -1705,9 +1705,9 @@ formn)
 
 
 
-# `lisp-implementation-type`
-# `lisp-implementation-version`
-# `list*`
+# 455 `lisp-implementation-type`
+# 456 `lisp-implementation-version`
+# 457 `list*`
 
 > [!note] "Function"
 **Syntax**:
@@ -1741,10 +1741,10 @@ list* &rest objects+ => result
 
 
 
-# `list-all-packages`
-# `list-length`
-# `listen`
-# `listp`
+# 458 `list-all-packages`
+# 459 `list-length`
+# 460 `listen`
+# 461 `listp`
 
 > [!note] "Function"
 **Syntax**:
@@ -1777,9 +1777,9 @@ listp object => generalized-boolean
 
 
 
-# `load`
-# `load-logical-pathname-translations`
-# `load-time-value`
+# 462 `load`
+# 463 `load-logical-pathname-translations`
+# 464 `load-time-value`
 
 
 > [!attention] "Special Operator"
@@ -1812,7 +1812,7 @@ load-time-value form &optional read-only-p => object
 
 
 
-# `locally`
+# 465 `locally`
 
 > [!attention] "Special Operator"
 **Syntax**:
@@ -1843,29 +1843,29 @@ locally declaration* form* => result*
 
 
 
-# `log`
-# `logand`
-# `logandc1`
-# `logandc2`
-# `logbitp`
-# `logcount`
-# `logeqv`
-# `logical-pathname`
-# `logical-pathname-translations`
-# `logior`
-# `lognand`
-# `lognor`
-# `lognot`
-# `logorc1`
-# `logorc2`
-# `logtest`
-# `logxor`
-# `long-float`
-# `long-float-epsilon`
-# `long-float-negative-epsilon`
-# `long-site-name`
+# 466 `log`
+# 467 `logand`
+# 468 `logandc1`
+# 469 `logandc2`
+# 470 `logbitp`
+# 471 `logcount`
+# 472 `logeqv`
+# 473 `logical-pathname`
+# 474 `logical-pathname-translations`
+# 475 `logior`
+# 476 `lognand`
+# 477 `lognor`
+# 478 `lognot`
+# 479 `logorc1`
+# 480 `logorc2`
+# 481 `logtest`
+# 482 `logxor`
+# 483 `long-float`
+# 484 `long-float-epsilon`
+# 485 `long-float-negative-epsilon`
+# 486 `long-site-name`
 
-# `loop`
+# 487 `loop`
 
 > [!tip] "Macro"
 **Syntax**:
@@ -2024,42 +2024,42 @@ d-var-spec::= simple-var | nil | (d-var-spec . d-var-spec)
 
 
 
-# `loop-finish`
-# `lower-case-p`
-# `machine-instance`
-# `machine-type`
-# `machine-version`
-# `macro-function`
-# `macroexpand`
-# `macroexpand-1`
+# 488 `loop-finish`
+# 489 `lower-case-p`
+# 490 `machine-instance`
+# 491 `machine-type`
+# 492 `machine-version`
+# 493 `macro-function`
+# 494 `macroexpand`
+# 495 `macroexpand-1`
 
-# `make-array`
-# `make-broadcast-stream`
-# `make-concatenated-stream`
-# `make-condition`
-# `make-dispatch-macro-character`
-# `make-echo-stream`
-# `make-hash-table`
-# `make-instance`
-# `make-instances-obsolete`
-# `make-list`
-# `make-load-form`
-# `make-load-form-saving-slots`
-# `make-method`
-# `make-package`
-# `make-pathname`
-# `make-random-state`
-# `make-sequence`
-# `make-string`
-# `make-string-input-stream`
-# `make-string-output-stream`
-# `make-symbol`
-# `make-synonym-stream`
-# `make-two-way-stream`
-# `makunbound`
-# `map`
-# `map-into`
-# `mapcon`
+# 496 `make-array`
+# 497 `make-broadcast-stream`
+# 498 `make-concatenated-stream`
+# 499 `make-condition`
+# 500 `make-dispatch-macro-character`
+# 501 `make-echo-stream`
+# 502 `make-hash-table`
+# 503 `make-instance`
+# 504 `make-instances-obsolete`
+# 505 `make-list`
+# 506 `make-load-form`
+# 507 `make-load-form-saving-slots`
+# 508 `make-method`
+# 509 `make-package`
+# 510 `make-pathname`
+# 511 `make-random-state`
+# 512 `make-sequence`
+# 513 `make-string`
+# 514 `make-string-input-stream`
+# 515 `make-string-output-stream`
+# 516 `make-symbol`
+# 517 `make-synonym-stream`
+# 518 `make-two-way-stream`
+# 519 `makunbound`
+# 520 `map`
+# 521 `map-into`
+# 522 `mapcon`
 
 > [!note] "Function"
 **Syntax**:
@@ -2095,10 +2095,10 @@ mapcon function &rest lists+ => concatenated-results
 
 
 
-# `maphash`
-# `mask-field`
-# `max`
-# `member-if-not`
+# 523 `maphash`
+# 524 `mask-field`
+# 525 `max`
+# 526 `member-if-not`
 
 > [!note] "Function"
 **Syntax**:
@@ -2132,16 +2132,16 @@ member-if-not predicate list &key key => tail
 
 
 
-# `merge`
-# `merge-pathnames`
-# `method`
-# `method-combination`
-# `method-combination-error`
-# `method-qualifiers`
-# `min`
-# `minusp`
-# `mismatch`
-# `rem`
+# 527 `merge`
+# 528 `merge-pathnames`
+# 529 `method`
+# 530 `method-combination`
+# 531 `method-combination-error`
+# 532 `method-qualifiers`
+# 533 `min`
+# 534 `minusp`
+# 535 `mismatch`
+# 536 `rem`
 
 > [!note] "Function"
 **Syntax**:
@@ -2173,19 +2173,19 @@ rem number divisor => remainder
 
 
 
-# `most-negative-double-float`
-# `most-negative-fixnum`
-# `most-negative-long-float`
-# `most-negative-short-float`
-# `most-negative-single-float`
-# `most-positive-double-float`
-# `most-positive-fixnum`
-# `most-positive-long-float`
-# `most-positive-short-float`
-# `most-positive-single-float`
-# `muffle-warning`
-# `multiple-value-bind`
-# `multiple-value-call`
+# 537 `most-negative-double-float`
+# 538 `most-negative-fixnum`
+# 539 `most-negative-long-float`
+# 540 `most-negative-short-float`
+# 541 `most-negative-single-float`
+# 542 `most-positive-double-float`
+# 543 `most-positive-fixnum`
+# 544 `most-positive-long-float`
+# 545 `most-positive-short-float`
+# 546 `most-positive-single-float`
+# 547 `muffle-warning`
+# 548 `multiple-value-bind`
+# 549 `multiple-value-call`
 
 > [!attention] "Special Operator"
 **Syntax**:
@@ -2217,8 +2217,8 @@ multiple-value-call function-form form* => result*
 
 
 
-# `multiple-value-list`
-# `multiple-value-prog1`
+# 550 `multiple-value-list`
+# 551 `multiple-value-prog1`
 
 > [!attention] "Special Operator"
 **Syntax**:
@@ -2249,14 +2249,14 @@ multiple-value-prog1 first-form form* => first-form-results
 
 
 
-# `multiple-value-setq`
-# `multiple-values-limit`
-# `name-char`
-# `namestring`
-# `nbutlast`
-# `nconc`
-# `next-method-p`
-# `nil`
+# 552 `multiple-value-setq`
+# 553 `multiple-values-limit`
+# 554 `name-char`
+# 555 `namestring`
+# 556 `nbutlast`
+# 557 `nconc`
+# 558 `next-method-p`
+# 559 `nil`
 
 > [!tip] "Constant Variable"
 **Constant Value**:
@@ -2280,9 +2280,9 @@ nil
 
 
 
-# `no-applicable-method`
-# `no-next-method`
-# `not`
+# 560 `no-applicable-method`
+# 561 `no-next-method`
+# 562 `not`
 
 > [!note] "Function"
 **Syntax**:
@@ -2314,17 +2314,17 @@ not x => boolean
 
 
 
-# `notany`
-# `notevery`
-# `notinline`
-# `nreconc`
-# `nreverse`
-# `nset-exclusive-or`
-# `nstring-capitalize`
-# `nstring-downcase`
-# `nstring-upcase`
-# `nsublis`
-# `nth`
+# 563 `notany`
+# 564 `notevery`
+# 565 `notinline`
+# 566 `nreconc`
+# 567 `nreverse`
+# 568 `nset-exclusive-or`
+# 569 `nstring-capitalize`
+# 570 `nstring-downcase`
+# 571 `nstring-upcase`
+# 572 `nsublis`
+# 573 `nth`
 
 > [!tip] "Accessor"
 **Syntax**:
@@ -2357,8 +2357,8 @@ nth n list => object
 
 
 
-# `nth-value`
-# `nthcdr`
+# 574 `nth-value`
+# 575 `nthcdr`
 
 > [!note] "Function"
 **Syntax**:
@@ -2391,7 +2391,7 @@ nthcdr n list => tail
 
 
 
-# `null`
+# 576 `null`
 
 > [!note] "Function"
 **Syntax**:
@@ -2423,13 +2423,13 @@ null object => boolean
 
 
 
-# `number`
-# `numberp`
-# `numerator`
-# `open`
-# `open-stream-p`
-# `optimize`
-# `or`
+# 577 `number`
+# 578 `numberp`
+# 579 `numerator`
+# 580 `open`
+# 581 `open-stream-p`
+# 582 `optimize`
+# 583 `or`
 
 > [!tip] "Macro"
 **Syntax**:
@@ -2462,35 +2462,35 @@ or form* => results*
 
 
 
-# `otherwise`
-# `output-stream-p`
-# `package`
-# `package-error`
-# `package-error-package`
-# `package-name`
-# `package-nicknames`
-# `package-shadowing-symbols`
-# `package-use-list`
-# `package-used-by-list`
-# `packagep`
-# `pairlis`
-# `parse-error`
-# `parse-integer`
-# `parse-namestring`
-# `pathname`
-# `pathname-device`
-# `pathname-directory`
-# `pathname-host`
-# `pathname-match-p`
-# `pathname-name`
-# `pathname-type`
-# `pathname-version`
-# `pathnamep`
-# `peek-char`
-# `phase`
-# `pi`
-# `plusp`
-# `pop`
+# 584 `otherwise`
+# 585 `output-stream-p`
+# 586 `package`
+# 587 `package-error`
+# 588 `package-error-package`
+# 589 `package-name`
+# 590 `package-nicknames`
+# 591 `package-shadowing-symbols`
+# 592 `package-use-list`
+# 593 `package-used-by-list`
+# 594 `packagep`
+# 595 `pairlis`
+# 596 `parse-error`
+# 597 `parse-integer`
+# 598 `parse-namestring`
+# 599 `pathname`
+# 600 `pathname-device`
+# 601 `pathname-directory`
+# 602 `pathname-host`
+# 603 `pathname-match-p`
+# 604 `pathname-name`
+# 605 `pathname-type`
+# 606 `pathname-version`
+# 607 `pathnamep`
+# 608 `peek-char`
+# 609 `phase`
+# 610 `pi`
+# 611 `plusp`
+# 612 `pop`
 
 > [!tip] "Macro"
 **Syntax**:
@@ -2542,36 +2542,36 @@ llst =>  ((2 3 4))
 
 除了后者会求值`place`的子形式三次, 而`pop`只求值一次.
 
-# `position`
-# `position-if`
-# `position-if-not`
-# `pprint`
-# `pprint-dispatch`
-# `pprint-exit-if-list-exhausted`
-# `pprint-fill`
-# `pprint-indent`
-# `pprint-linear`
-# `pprint-logical-block`
-# `pprint-newline`
-# `pprint-pop`
-# `pprint-tab`
-# `pprint-tabular`
-# `prin1`
-# `prin1-to-string`
-# `princ`
-# `princ-to-string`
-# `print`
-# `print-not-readable`
-# `print-not-readable-object`
-# `print-object`
-# `print-unreadable-object`
-# `probe-file`
-# `proclaim`
-# `prog`
-# `prog*`
-# `prog1`
-# `prog2`
-# `progn`
+# 613 `position`
+# 614 `position-if`
+# 615 `position-if-not`
+# 616 `pprint`
+# 617 `pprint-dispatch`
+# 618 `pprint-exit-if-list-exhausted`
+# 619 `pprint-fill`
+# 620 `pprint-indent`
+# 621 `pprint-linear`
+# 622 `pprint-logical-block`
+# 623 `pprint-newline`
+# 624 `pprint-pop`
+# 625 `pprint-tab`
+# 626 `pprint-tabular`
+# 627 `prin1`
+# 628 `prin1-to-string`
+# 629 `princ`
+# 630 `princ-to-string`
+# 631 `print`
+# 632 `print-not-readable`
+# 633 `print-not-readable-object`
+# 634 `print-object`
+# 635 `print-unreadable-object`
+# 636 `probe-file`
+# 637 `proclaim`
+# 638 `prog`
+# 639 `prog*`
+# 640 `prog1`
+# 641 `prog2`
+# 642 `progn`
 
 > [!attention] "Special Operator"
 **Syntax**:
@@ -2619,8 +2619,8 @@ Common Lisp中很多地方包含使用隐式`progn`的语法. 即, 作为其语�
 允许写多个被串行求值的形式, 忽略除最后一个形式的结果, 返回最后一个形式的结果.
 这些地方包括但不限于: lambda表达式的体, 多个控制和条件形式的体(`case`、`catch`、`progn`、`when`等).
 
-# `program-error`
-# `progv`
+# 643 `program-error`
+# 644 `progv`
 
 > [!attention] "Special Operator"
 **Syntax**:
@@ -2674,11 +2674,11 @@ progv symbols values form* => result*
 
 `progv`在编写内嵌在Lisp中的语言时很有用, 提供了绑定动态变量的机制.
 
-# `provide`
-# `psetq`
-# `push`
-# `pushnew`
-# `quote`
+# 645 `provide`
+# 646 `psetq`
+# 647 `push`
+# 648 `pushnew`
+# 649 `quote`
 
 > [!attention] "Special Operator"
 **Syntax**:
@@ -2741,53 +2741,53 @@ a =>  1 ;object未被求值
 自求值对象不需要被`quote`引述. 符号和列表用于标识程序的部分, 不使用`quote`不能作为常值数据使用.
 因为`quote`抑制了这些对象的求值, 它们称为数据而不是程序.
 
-# `random`
-# `random-state`
-# `random-state-p`
-# `rassoc`
-# `rassoc-if`
-# `rassoc-if-not`
-# `ratio`
-# `rational`
-# `rationalize`
-# `rationalp`
-# `read`
-# `read-byte`
-# `read-char`
-# `read-char-no-hang`
-# `read-delimited-list`
-# `read-from-string`
-# `read-line`
-# `read-preserving-whitespace`
-# `read-sequence`
-# `reader-error`
-# `readtable`
-# `readtable-case`
-# `readtablep`
-# `real`
-# `realp`
-# `realpart`
-# `reduce`
-# `reinitialize-instance`
-# `remf`
-# `remhash`
-# `remove`
-# `remove-duplicates`
-# `remove-if`
-# `remove-if-not`
-# `remove-method`
-# `remprop`
-# `rename-file`
-# `rename-package`
-# `replace`
-# `require`
-# `rest`
-# `restart`
-# `restart-bind`
-# `restart-case`
-# `restart-name`
-# `return`
-# `return-from`
+# 650 `random`
+# 651 `random-state`
+# 652 `random-state-p`
+# 653 `rassoc`
+# 654 `rassoc-if`
+# 655 `rassoc-if-not`
+# 656 `ratio`
+# 657 `rational`
+# 658 `rationalize`
+# 659 `rationalp`
+# 660 `read`
+# 661 `read-byte`
+# 662 `read-char`
+# 663 `read-char-no-hang`
+# 664 `read-delimited-list`
+# 665 `read-from-string`
+# 666 `read-line`
+# 667 `read-preserving-whitespace`
+# 668 `read-sequence`
+# 669 `reader-error`
+# 670 `readtable`
+# 671 `readtable-case`
+# 672 `readtablep`
+# 673 `real`
+# 674 `realp`
+# 675 `realpart`
+# 676 `reduce`
+# 677 `reinitialize-instance`
+# 678 `remf`
+# 679 `remhash`
+# 680 `remove`
+# 681 `remove-duplicates`
+# 682 `remove-if`
+# 683 `remove-if-not`
+# 684 `remove-method`
+# 685 `remprop`
+# 686 `rename-file`
+# 687 `rename-package`
+# 688 `replace`
+# 689 `require`
+# 690 `rest`
+# 691 `restart`
+# 692 `restart-bind`
+# 693 `restart-case`
+# 694 `restart-name`
+# 695 `return`
+# 696 `return-from`
 
 > [!attention] "Special Operator"
 **Syntax**:
@@ -2819,23 +2819,23 @@ return-from name [result] =>|
 
 
 
-# `revappend`
-# `reverse`
-# `room`
-# `rotatef`
-# `row-major-aref`
-# `rplaca`
-# `rplacd`
-# `safety`
-# `satisfies`
-# `sbit`
-# `scale-float`
-# `schar`
-# `search`
-# `sequence`
-# `serious-condition`
-# `set`
-# `nset-difference`
+# 697 `revappend`
+# 698 `reverse`
+# 699 `room`
+# 700 `rotatef`
+# 701 `row-major-aref`
+# 702 `rplaca`
+# 703 `rplacd`
+# 704 `safety`
+# 705 `satisfies`
+# 706 `sbit`
+# 707 `scale-float`
+# 708 `schar`
+# 709 `search`
+# 710 `sequence`
+# 711 `serious-condition`
+# 712 `set`
+# 713 `nset-difference`
 
 > [!note] "Function"
 **Syntax**:
@@ -2867,12 +2867,12 @@ nset-difference list-1 list-2 &key key test test-not => result-list
 
 
 
-# `set-dispatch-macro-character`
-# `set-exclusive-or`
-# `set-macro-character`
-# `set-pprint-dispatch`
-# `set-syntax-from-char`
-# `psetf`
+# 714 `set-dispatch-macro-character`
+# 715 `set-exclusive-or`
+# 716 `set-macro-character`
+# 717 `set-pprint-dispatch`
+# 718 `set-syntax-from-char`
+# 719 `psetf`
 
 > [!tip] "Macro"
 **Syntax**:
@@ -2947,7 +2947,7 @@ y =>  (1 A 3)
 **Notes**: 无.
 
 
-# `setq`
+# 720 `setq`
 
 > [!attention] "Special Form"
 **Syntax**:
@@ -3015,98 +3015,98 @@ c =>  7
 
 
 
-# `shadow`
-# `shadowing-import`
-# `shared-initialize`
-# `shiftf`
-# `short-float`
-# `short-float-epsilon`
-# `short-float-negative-epsilon`
-# `short-site-name`
-# `signal`
-# `signed-byte`
-# `signum`
-# `simple-array`
-# `simple-base-string`
-# `simple-bit-vector`
-# `simple-bit-vector-p`
-# `simple-condition`
-# `simple-condition-format-arguments`
-# `simple-condition-format-control`
-# `simple-error`
-# `simple-string`
-# `simple-string-p`
-# `simple-type-error`
-# `simple-vector`
-# `simple-vector-p`
-# `simple-warning`
-# `sin`
-# `single-float`
-# `single-float-epsilon`
-# `single-float-negative-epsilon`
-# `sinh`
-# `sleep`
-# `slot-boundp`
-# `slot-exists-p`
-# `slot-makunbound`
-# `slot-missing`
-# `slot-unbound`
-# `slot-value`
-# `software-type`
-# `software-version`
-# `some`
-# `sort`
-# `space`
-# `special`
-# `special-operator-p`
-# `speed`
-# `sqrt`
-# `stable-sort`
-# `standard`
-# `standard-char`
-# `standard-char-p`
-# `standard-class`
-# `standard-generic-function`
-# `standard-method`
-# `standard-object`
-# `step`
-# `storage-condition`
-# `store-value`
-# `stream`
-# `stream-element-type`
-# `stream-error`
-# `stream-error-stream`
-# `stream-external-format`
-# `streamp`
-# `string`
-# `string-capitalize`
-# `string-downcase`
-# `string-equal`
-# `string-greaterp`
-# `string-left-trim`
-# `string-lessp`
-# `string-not-equal`
-# `string-not-greaterp`
-# `string-not-lessp`
-# `string-right-trim`
-# `string-stream`
-# `string-trim`
-# `string-upcase`
-# `string/=`
-# `string<`
-# `string<=`
-# `string=`
-# `string>`
-# `string>=`
-# `stringp`
-# `structure`
-# `structure-class`
-# `structure-object`
-# `style-warning`
-# `sublis`
-# `subseq`
-# `subsetp`
-# `nsubst-if-not`
+# 721 `shadow`
+# 722 `shadowing-import`
+# 723 `shared-initialize`
+# 724 `shiftf`
+# 725 `short-float`
+# 726 `short-float-epsilon`
+# 727 `short-float-negative-epsilon`
+# 728 `short-site-name`
+# 729 `signal`
+# 730 `signed-byte`
+# 731 `signum`
+# 732 `simple-array`
+# 733 `simple-base-string`
+# 734 `simple-bit-vector`
+# 735 `simple-bit-vector-p`
+# 736 `simple-condition`
+# 737 `simple-condition-format-arguments`
+# 738 `simple-condition-format-control`
+# 739 `simple-error`
+# 740 `simple-string`
+# 741 `simple-string-p`
+# 742 `simple-type-error`
+# 743 `simple-vector`
+# 744 `simple-vector-p`
+# 745 `simple-warning`
+# 746 `sin`
+# 747 `single-float`
+# 748 `single-float-epsilon`
+# 749 `single-float-negative-epsilon`
+# 750 `sinh`
+# 751 `sleep`
+# 752 `slot-boundp`
+# 753 `slot-exists-p`
+# 754 `slot-makunbound`
+# 755 `slot-missing`
+# 756 `slot-unbound`
+# 757 `slot-value`
+# 758 `software-type`
+# 759 `software-version`
+# 760 `some`
+# 761 `sort`
+# 762 `space`
+# 763 `special`
+# 764 `special-operator-p`
+# 765 `speed`
+# 766 `sqrt`
+# 767 `stable-sort`
+# 768 `standard`
+# 769 `standard-char`
+# 770 `standard-char-p`
+# 771 `standard-class`
+# 772 `standard-generic-function`
+# 773 `standard-method`
+# 774 `standard-object`
+# 775 `step`
+# 776 `storage-condition`
+# 777 `store-value`
+# 778 `stream`
+# 779 `stream-element-type`
+# 780 `stream-error`
+# 781 `stream-error-stream`
+# 782 `stream-external-format`
+# 783 `streamp`
+# 784 `string`
+# 785 `string-capitalize`
+# 786 `string-downcase`
+# 787 `string-equal`
+# 788 `string-greaterp`
+# 789 `string-left-trim`
+# 790 `string-lessp`
+# 791 `string-not-equal`
+# 792 `string-not-greaterp`
+# 793 `string-not-lessp`
+# 794 `string-right-trim`
+# 795 `string-stream`
+# 796 `string-trim`
+# 797 `string-upcase`
+# 798 `string/=`
+# 799 `string<`
+# 800 `string<=`
+# 801 `string=`
+# 802 `string>`
+# 803 `string>=`
+# 804 `stringp`
+# 805 `structure`
+# 806 `structure-class`
+# 807 `structure-object`
+# 808 `style-warning`
+# 809 `sublis`
+# 810 `subseq`
+# 811 `subsetp`
+# 812 `nsubst-if-not`
 
 > [!note] "Function"
 **Syntax**:
@@ -3144,7 +3144,7 @@ nsubst-if-not new predicate tree &key key => new-tree
 
 
 
-# `nsubstitute-if-not`
+# 813 `nsubstitute-if-not`
 
 > [!note] "Function"
 **Syntax**:
@@ -3193,12 +3193,12 @@ nsubstitute-if-not newitem predicate sequence &key from-end start end count key
 
 
 
-# `subtypep`
-# `svref`
-# `sxhash`
-# `symbol`
-# `symbol-function`
-# `symbol-macrolet`
+# 814 `subtypep`
+# 815 `svref`
+# 816 `sxhash`
+# 817 `symbol`
+# 818 `symbol-function`
+# 819 `symbol-macrolet`
 
 > [!attention] "Special Operator"
 **Syntax**:
@@ -3268,15 +3268,15 @@ NOT=>  (foo foo)
 
 如果一个`symbol-macrolet`形式是顶级形式, `forms`也按顶级形式处理. 见[3.2.3 文件编译](../03-Evaluation-and-Compilation#3.2.3).
 
-# `symbol-name`
-# `symbol-package`
-# `symbol-plist`
-# `symbol-value`
-# `symbolp`
-# `synonym-stream`
-# `synonym-stream-symbol`
-# `t`
-# `tagbody`
+# 820 `symbol-name`
+# 821 `symbol-package`
+# 822 `symbol-plist`
+# 823 `symbol-value`
+# 824 `symbolp`
+# 825 `synonym-stream`
+# 826 `synonym-stream-symbol`
+# 827 `t`
+# 828 `tagbody`
 
 > [!attention] "Special Operator"
 **Syntax**:
@@ -3307,11 +3307,11 @@ tagbody {tag | statement}* => nil
 
 
 
-# `tailp`
-# `tan`
-# `tanh`
-# `terpri`
-# `the`
+# 829 `tailp`
+# 830 `tan`
+# 831 `tanh`
+# 832 `terpri`
+# 833 `the`
 
 > [!attention] "Special Operator"
 **Syntax**:
@@ -3342,7 +3342,7 @@ the value-type form => result*
 
 
 
-# `throw`
+# 834 `throw`
 
 > [!attention] "Special Operator"
 **Syntax**:
@@ -3374,29 +3374,29 @@ throw tag result-form =>|
 
 
 
-# `time`
-# `trace`
-# `translate-logical-pathname`
-# `translate-pathname`
-# `tree-equal`
-# `truename`
-# `two-way-stream`
-# `two-way-stream-input-stream`
-# `two-way-stream-output-stream`
-# `type`
-# `type-error`
-# `type-error-datum`
-# `type-error-expected-type`
-# `type-of`
-# `typecase`
-# `typep`
-# `unbound-slot`
-# `unbound-slot-instance`
-# `unbound-variable`
-# `undefined-function`
-# `unexport`
-# `unintern`
-# `nunion`
+# 835 `time`
+# 836 `trace`
+# 837 `translate-logical-pathname`
+# 838 `translate-pathname`
+# 839 `tree-equal`
+# 840 `truename`
+# 841 `two-way-stream`
+# 842 `two-way-stream-input-stream`
+# 843 `two-way-stream-output-stream`
+# 844 `type`
+# 845 `type-error`
+# 846 `type-error-datum`
+# 847 `type-error-expected-type`
+# 848 `type-of`
+# 849 `typecase`
+# 850 `typep`
+# 851 `unbound-slot`
+# 852 `unbound-slot-instance`
+# 853 `unbound-variable`
+# 854 `undefined-function`
+# 855 `unexport`
+# 856 `unintern`
+# 857 `nunion`
 
 > [!note] "Function"
 **Syntax**:
@@ -3428,7 +3428,7 @@ nunion list-1 list-2 &key key test test-not => result-list
 
 
 
-# `when`
+# 858 `when`
 
 > [!tip] "Macro"
 **Syntax**:
@@ -3519,11 +3519,11 @@ unless test-form form* => result*
 
 
 
-# `unread-char`
-# `unsigned-byte`
-# `untrace`
-# `unuse-package`
-# `unwind-protect`
+# 859 `unread-char`
+# 860 `unsigned-byte`
+# 861 `untrace`
+# 862 `unuse-package`
+# 863 `unwind-protect`
 
 > [!attention] "Special Operator"
 **Syntax**:
@@ -3556,47 +3556,47 @@ unwind-protect protected-form cleanup-form* => result*
 
 
 
-# `update-instance-for-different-class`
-# `update-instance-for-redefined-class`
-# `upgraded-array-element-type`
-# `upgraded-complex-part-type`
-# `upper-case-p`
-# `use-package`
-# `use-value`
-# `user-homedir-pathname`
-# `values`
-# `values-list`
-# `variable`
-# `vector`
-# `vector-pop`
-# `vector-push`
-# `vector-push-extend`
-# `vectorp`
-# `warn`
-# `warning`
-# `wild-pathname-p`
-# `with-accessors`
-# `with-compilation-unit`
-# `with-condition-restarts`
-# `with-hash-table-iterator`
-# `with-input-from-string`
-# `with-open-file`
-# `with-open-stream`
-# `with-output-to-string`
-# `with-package-iterator`
-# `with-simple-restart`
-# `with-slots`
-# `with-standard-io-syntax`
-# `write`
-# `write-byte`
-# `write-char`
-# `write-line`
-# `write-sequence`
-# `write-string`
-# `write-to-string`
-# `y-or-n-p`
-# `yes-or-no-p`
-# `zerop`
+# 864 `update-instance-for-different-class`
+# 865 `update-instance-for-redefined-class`
+# 866 `upgraded-array-element-type`
+# 867 `upgraded-complex-part-type`
+# 868 `upper-case-p`
+# 869 `use-package`
+# 870 `use-value`
+# 871 `user-homedir-pathname`
+# 872 `values`
+# 873 `values-list`
+# 874 `variable`
+# 875 `vector`
+# 876 `vector-pop`
+# 877 `vector-push`
+# 878 `vector-push-extend`
+# 879 `vectorp`
+# 880 `warn`
+# 881 `warning`
+# 882 `wild-pathname-p`
+# 883 `with-accessors`
+# 884 `with-compilation-unit`
+# 885 `with-condition-restarts`
+# 886 `with-hash-table-iterator`
+# 887 `with-input-from-string`
+# 888 `with-open-file`
+# 889 `with-open-stream`
+# 890 `with-output-to-string`
+# 891 `with-package-iterator`
+# 892 `with-simple-restart`
+# 893 `with-slots`
+# 894 `with-standard-io-syntax`
+# 895 `write`
+# 896 `write-byte`
+# 897 `write-char`
+# 898 `write-line`
+# 899 `write-sequence`
+# 900 `write-string`
+# 901 `write-to-string`
+# 902 `y-or-n-p`
+# 903 `yes-or-no-p`
+# 904 `zerop`
 
 > [!note] "Function"
 **Syntax**:
